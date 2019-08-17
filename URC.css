@@ -1,0 +1,1089 @@
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$("input").attr("placeholder", "Search this site");
+
+});
+</script>
+
+<style>
+/* <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lora&display=swap" type="text/css"/> */
+
+/*---- FULL WIDTH ELEMENTS ----*/
+#header-container, #columns, #footer .gpanel
+{
+	width:100%;
+	margin:0;
+}
+
+.page-node #content-column .content-inner {
+	padding:0;
+}
+
+/* PAGE MARGINS */
+.hl__container-margins /*add css class to any container you want to have margins*/,
+#content-column .hl__full-width .block-inner /*full width cta - NEED THIS??*/,
+#columns .breadcrumb /*page breadcrumbs*/,
+#main-content-header, #block-os-pages-main-content /*main content block*/,
+.node-media-gallery /*media gallery*/,
+.view-os-events /*event calendar*/, .node-event /*event detail*/, .view-os-profiles, .node-person /*staff pages*/ {
+  width:100%;
+  max-width:1380px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/* small size, centered */
+.hl__container-margins--small {
+  max-width: 930px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* medium size, centered */
+.hl__container-margins--medium {
+	max-width:1080px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* text box, right aligned */
+h1#page-title, #block-os-pages-main-content .block-inner, /* for page content widgets + titles*/
+.hl__text-box .block-inner, /*for rich text widgets*/
+.event-content,
+.view-os-profiles .view-content, .node-person > * /*staff profiles*/ {
+	max-width:930px;
+}
+
+/* spacing between blocks */
+#content-panels .block {
+ margin-bottom: 120px;
+}
+
+/* remove top border from blocks (Crimson Theme) */
+.front #content-column .block, .node-person .block-inner, .comment-wrapper {
+	border-top:none;
+}
+
+
+/*ALL PAGES EXCEPT HOMEPAGE*/
+#main-content-header {
+	margin-top:80px;
+}
+
+/* BREADCRUMB */
+#columns .breadcrumb {
+	margin-top: 45px;
+	/* padding: 0; */
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 32px;
+	text-transform: none;
+}
+
+.breadcrumb span {
+	margin: 0 3px;
+}
+
+.breadcrumb span:last-of-type {
+	display:none;
+}
+
+.breadcrumb a {
+	font-size:15px;
+}
+
+/* THINGS THAT NEED TO BE REMOVED */
+/* .front #content-column .block, .node-person .block-inner, .comment-wrapper {
+	border-top:none;
+	margin-bottom:0;
+} */
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*GENERAL TYPOGRAPHY*/
+body * {
+	font-family:"TruenoRegular",sans-serif !important;
+	color:#1e1e1e;
+	font-style:normal;
+}
+
+p, ul, li, .event-content, .hl__posts i, .hl__posts em {
+	font-family:"Lora",Georgia,serif !important;
+	font-weight:400;
+	font-size:19px;
+	line-height:32px;
+
+	/*mobile*/
+	/*font-size:17px;*/
+	/*line-height:29px;*/
+}
+
+p, .hl__posts i, .hl__posts em {
+	color:#414141;
+	margin-bottom:1.84em;
+}
+
+ul {
+	margin-bottom:35px;
+}
+
+/*PAGE TITLES*/
+h1#page-title, /*h2.block-title,*/ #calendarTitle, h2.hl__content-block--hero {
+	font-family:"TruenoBold",sans-serif !important;
+	font-weight:700;
+	font-size:60px;
+	line-height:74px;
+	text-transform:uppercase;
+	margin-bottom:15px;
+
+	/*mobile*/
+	/*font-size:32px;
+	line-height:40px;*/
+}
+.boxes-box-content h2, #content-column .field-name-body h2, .hl__posts.hl__event-list h2.block-title, h2.block-title /*test this out from the h1 font-size*/ {
+	font-family:"TruenoBold",sans-serif !important;
+	font-weight:700;
+	font-size:32px;
+	line-height:42px;
+	text-transform:uppercase;
+	letter-spacing:2.4px;
+	margin-bottom:1em;
+
+	/*mobile*/
+	/*font-size:24px;*/
+	/*line-height:31px;*/
+}
+h3, #content-column .field-name-body h3 {
+	font-family:"TruenoBold",sans-serif !important;
+	font-weight:700;
+	font-size:20px;
+	line-height:30px;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+	margin-bottom:0.4em;
+}
+h4, #content-column .field-name-body h4 {
+	font-family:"TruenoSemiBold",sans-serif !important;
+	font-weight: 500;
+	/* color: #1e1e1e; */
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2.14px;
+	margin-bottom:0.4em;
+}
+
+h5 {
+	font-family:"TruenoSemiBold",sans-serif !important;
+	font-weight:500;
+	/* color:#1e1e1e; */
+	font-size:19px;
+	line-height:29px;
+}
+h6 {
+	font-family:"TruenoSemiBold",sans-serif !important;
+	font-weight:500;
+	/* color:#1e1e1e; */
+	font-size:16px;
+	line-height:28px;
+}
+.hl__subtitle {
+	color:#1e1e1e;
+	font-style:italic;
+	font-size:26px;
+	line-height:40px;
+
+	/* mobile */
+	/* font-size:22px; */
+	/* line-height:34px; */
+}
+.hl__supporting-large {
+	font-family:"TruenoLight",sans-serif !important;
+	font-weight:300;
+	color:#1e1e1e;
+	font-size:25px;
+	line-height:42px;
+
+	/* mobile */
+	/* font-size:22px; */
+	/* line-height:38px; */
+}
+
+
+
+/* BLUE LINK TAG */
+.breadcrumb a, #columns .block-boxes-os_boxes_html a, #columns .field-name-body a, .cal-export, .event-content a, a.more-link, #footer a {
+	color: #0579B8;
+	font-weight:700;
+	text-decoration:none;
+	border-bottom: 3px solid transparent;
+	transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+}
+
+.breadcrumb a:hover, .breadcrumb a:focus,
+#columns .block-boxes-os_boxes_html a:hover, #columns .block-boxes-os_boxes_html a:focus,
+#columns .field-name-body a:hover, #columns .field-name-body a:focus, .cal-export:hover, .cal-export:focus, a.more-link:hover, a.more-link:focus {
+	border-color: rgba(5,121,184,0.3);
+}
+
+/* BLACK LINK TAG */
+.event-content a {
+	color: #1e1e1e;
+	/*font-size:26px;*/
+ }
+.event-content a:hover, .event-content a:focus {
+	border-color: rgba(30,30,30,0.5);
+}
+
+/* BUTTON (BLACK BY DEFAULT) */
+#columns a.hl__button, #columns a.hl__button--blue, #columns a.hl__button--outline {
+		/*font-size:19px;*/
+  	border: 2px solid transparent;
+  	border-radius: 4px;
+  	letter-spacing: 1.17px;
+  	line-height: 19px;
+  	padding: 12px 23px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	transition: all 0.4s ease;
+  	background-color: #1e1e1e;
+  	color: #ffffff;
+}
+#columns a.hl__button:hover, #columns a.hl__button:focus {
+	background-color: #6c6c6c;
+	border-color: #6c6c6c;
+}
+
+
+/* BLUE BUTTON */
+#columns a.hl__button--blue {
+	background-color:#0579B8;
+}
+#columns a.hl__button--blue:hover, #columns a.hl__button--blue:focus {
+	background-color: #2A5280;
+	border-color: #2A5280;
+}
+
+/* OUTLINE BUTTON */
+#columns a.hl__button--outline {
+	border:1px solid #1E1E1E;
+	font-size:12px;
+	line-height:16px;
+	padding:5px 9px;
+	color:#1E1E1E;
+	background-color:#FFFFFF;
+}
+#columns a.hl__button--outline:hover, #columns a.hl__button--outline:focus {
+	background-color: #6C6C6C;
+	border-color: #6C6C6C;
+	color:#FFFFFF;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/* HEADER/NAV/FOOTER CONTAINER */
+#boxes-box-site_info h1 a,
+#menu-bar nav:first-of-type, #menu-bar #block-os-primary-menu,
+#footer .gpanel, .region-footer, .message-inner,
+#powerby-login {
+	width:100%;
+	padding-left:20px;
+}
+#footer .gpanel {
+	padding-left:0;
+}
+.hl__footer__logo block-inner {
+	margin:0;
+}
+
+/*---- CHILD THEME HEADER BAR ----*/
+/* remove original header and margins */
+div#branding_header {
+	display: none;
+}
+.header-left.header-main.header-right .region-header-second .region-inner {
+	margin:0;
+}
+
+/*BANNER COLOR -- YELLOW*/
+#header {
+	background-image: linear-gradient(45deg, #F8C21C 0%, #FBE08E 100%); /* yellow*/
+}
+
+/*BANNER FONT -- TRUENO*/
+#boxes-box-site_info h1 {
+    line-height:1;
+    font-size: 26px;
+}
+#boxes-box-site_info h1 a {
+    font-family: "TruenoBold",sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 1.52px;
+    line-height: 1;
+    color: #1e1e1e;
+    text-transform:uppercase;
+}
+/*BANNER HEIGHT*/
+#header /*full width banner*/,
+#header-container .block-boxes-os_boxes_site_info /*banner-left*/,
+.region.region-header-third /*banner-right*/,
+.region.region-header-second /*banner container*/ {
+	min-height: 61px;
+	max-height: 61px;
+}
+
+/*BANNER LOGO*/
+/* right align logo */
+.region.region-header-third {
+	background: #1e1e1e;
+	width: 320px;
+	text-align: center;
+	margin-left: -320px;
+}
+/* vertical-align logo */
+.region-header-third .region-inner {
+	padding: 17px 0; /*with trueno font*/
+}
+
+
+
+
+
+/* NAVIGATION MENU */
+#menu-bar {
+	position:sticky;
+	top:0;
+	z-index:1;
+	display:grid;
+	grid-template-columns:auto 320px;
+}
+
+#menu-bar,
+#menu-bar ul.nice-menu a.active,
+#menu-bar ul.nice-menu .menuparent a.active {
+	background:#1e1e1e;
+}
+#menu-bar ul.nice-menu a {
+	/* width: 100%; */
+}
+
+#menu-bar ul.nice-menu a:hover,
+#menu-bar ul.nice-menu .menuparent.over > a,
+#menu-bar ul.nice-menu .menuparent a:hover,
+#menu-bar ul.nice-menu ul {
+	background:#414141;
+}
+
+#menu-bar ul.nice-menu a {
+	font-family: "TruenoLight" !important;
+	font-size:18px;
+	width:100%;
+}
+
+#menu-bar ul.nice-menu .menu-path-front a {
+  padding-right: 5px;
+	padding-left:20px;
+}
+
+
+
+/* tab padding */
+#menu-bar ul.nice-menu .menu-path-front, #menu-bar ul.nice-menu .menuparent {
+ padding-right:25px;
+}
+#menu-bar #block-os-primary-menu {
+ margin-left: -20px;
+}
+#menu-bar ul.nice-menu .menuparent a {
+  padding-right: 10px;
+}
+
+/* remove first linl padding from subnav */
+#menu-bar ul.nice-menu ul .first a {
+  margin-left: 0;
+}
+/* top of dropdown */
+ul.nice-menu ul {
+	top:64px !important;
+}
+
+/* chevron arrow */
+#menu-bar ul.nice-menu .menuparent > a:before {
+	position:absolute;
+	background-image:none;
+	background-color:transparent;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.3em;
+	width:0.3em;
+	right:20px;
+	transform: rotate(135deg);
+	transition: transform 0.7s ease;
+}
+#menu-bar ul.nice-menu .menuparent.over > a::before {
+  transform: scaleY(-1) rotate(135deg);
+}
+
+
+
+/* SUB NAV MENUS */
+#menu-bar ul.nice-menu .menuparent ul li a, #menu-bar ul.nice-menu .menuparent ul li a.active, #menu-bar ul.nice-menu .menuparent ul li a:hover {
+	font-size:16px;
+	padding:10px 15px;
+	font-weight:normal;
+}
+
+#menu-bar ul.nice-menu .menuparent ul li {
+ padding-right:0;
+ width: 100%;
+ border-bottom: 1px solid #f2f2f2 !important;
+}
+
+#menu-bar ul.nice-menu .menuparent ul li:last-child {
+  border-bottom: none !important;
+}
+
+#menu-bar ul.nice-menu ul a {
+  width: auto;
+}
+
+#menu-bar ul.nice-menu .menuparent ul li a:hover, #menu-bar ul.nice-menu .menuparent ul li a:focus {
+ color:#1e1e1e;
+ background: #f2f2f2;
+ font-weight:normal;
+}
+
+#menu-bar ul li ul {
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.32)
+}
+
+
+
+
+
+/* SEARCH BOX*/
+.block-os-search-solr {
+	max-width:270px;
+	padding:15px;
+}
+input.form-text,
+textarea {
+ font-size:15px;
+}
+.search-block-form .container-inline .form-item .form-text, #search-block-form .container-inline .form-item .form-text {
+  padding: 7px !important;
+  font-size: 15px !important;
+}
+
+/* magnifying glass */
+#search-block-form input#edit-submit.form-submit, #search-block-form input.form-submit {
+  background: url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/search-icon.png) no-repeat center center;
+  background-size: 25px auto;
+}
+
+.search-block-form .container-inline .form-item .form-text, #search-block-form .container-inline .form-item .form-text {
+  border-color: transparent;
+	border-radius:4px;
+}
+
+
+
+/* HOMEPAGE HERO */
+/*space between header and hero image*/
+.hl__content-block--hero {
+	margin-top: -30px;
+}
+.hl__content-block--hero .hl__cta__title {
+  font-family: "Lora",Georgia,serif !important;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 74px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+.hl__content-block--hero .hl__cta__title span {
+  font-family: "TruenoBold",sans-serif !important;
+  /* font-weight: 700; */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
+
+/*DIVIDER*/
+.hl__divider .block-inner::before {
+    background-image: linear-gradient(90deg,#6c6c6c 40%,rgba(255,255,255,0) 20%),linear-gradient(90deg,#6c6c6c 40%,rgba(255,255,255,0) 20%);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 4px 1px;
+    border: none;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+.hl__divider .block-inner, .hl__divider .block-content {
+	margin-top:60px;
+}
+
+/* BULLETS */
+#content-column li {
+	list-style:none;
+	text-indent:-1em;
+}
+#content-column li::before {
+	color: #0579b8;
+	content: '\2022';
+	display: inline-block;
+	font-size: 1.5em;
+	max-height: 0;
+	max-width: 0;
+	position: relative;
+	top: 3px;
+}
+#content-column .block ul {
+  padding-left: 25px;
+}
+#content-column .node-content ul {
+	padding-left:35px;
+}
+/* remove/undo bullet styling from other page elements using unstyled lists*/
+#content-column #tasks li:before, /*calendar tabs*/
+#content-column .pager li:before /*pagination*/ {
+	 content:none;
+}
+#content-column .date-nav li {
+  text-indent: 0;
+}
+
+
+
+
+/* RIGHT ARROW LINK */
+/*.hl__right-aligned-link a,*/ a.hl__right-arrow, a.more-link, a.node-readmore {
+	margin-bottom:80px;
+}
+
+a.hl__right-arrow, a.more-link, a.node-readmore {
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:600;
+	letter-spacing:2px;
+	margin-top:30px;
+	clear:both;
+}
+
+a.hl__right-arrow::after, a.more-link::after, a.node-readmore::after {
+    border-bottom: 0.425em solid transparent;
+	border-left: 0.5em solid currentColor;
+	border-top: 0.425em solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 0;
+	/*line-height: 0;*/
+	margin-left: 0.3em;
+	opacity: 0.6;
+	/*width: 0;*/
+	background-image:none;
+}
+
+
+/*---- CONTENT BLOCK ----*/
+.hl__content-block {
+  background: gray; /* default color */
+
+  /* helps position background images if added */
+  background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+#content-column .hl__content-block .block-inner {
+  padding: 120px 0;
+  text-align: center;
+
+  /* same as .hl__container-margins--small */
+  max-width: 930px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hl__content-block .boxes-box-content > * {
+  color: #FFFFFF; /* for dark wash or dark colored backgrounds */
+}
+.hl__content-block__dark-text .boxes-box-content > * {
+  color: #1E1E1E; /* for light wash, light colored, dotted backgrounds */
+}
+
+/* dark wash */
+.hl__content-block--image-dark {
+	background:linear-gradient(rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
+}
+
+/* light wash */
+.hl__content-block--image-light {
+	background:linear-gradient(rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.9)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
+}
+
+/* dotted background */
+.hl__content-block--dots {
+	background:#FFFFFF url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/dots.png) top center repeat;
+}
+#content-column .hl__content-block--dots .block-inner {
+  padding:60px;
+  text-align:left; /*left-aligned content*/
+  max-width:1380px;
+}
+.hl__content-block--dots .boxes-box-content > * {
+  color: #1E1E1E; /* for light wash, light colored, dotted backgrounds */
+}
+.hl__content-block--dots p {
+	font-size:28px;
+	line-height:41px;
+}
+
+/* small promo */
+#content-column .hl__content-block--small .block-inner {
+  text-align: left;
+	padding:0;
+}
+#content-panels .hl__content-block--small .boxes-box-content {
+	display: grid;
+  grid-template-columns: auto auto;
+  align-items: end;
+  padding: 120px 30px 20px 30px;
+	grid-gap:30px;
+}
+
+/* half page cta */
+/* .hl__cta--small {
+	display:grid;
+	grid-template-columns: auto minmax(200px, 33%);
+	align-items:end;
+	padding:120px 30px 20px 30px;
+} */
+/* .hl__cta--small .hl__cta__button {
+	margin-bottom:24px;
+	justify-self:end;
+} */
+.hl__content-block--small .hl__content-block--small__content > * {
+	color:#FFFFFF;
+}
+.hl__content-block--small h2, .hl__content-block--small h3 {
+  text-transform: none;
+	font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.4em;
+}
+/* this decription text seems really small to me...and the button text */
+/* .hl__content-block--small p {
+	font-size:16px;
+	line-height:28px;
+} */
+
+
+/* custom background colors and images go here */
+.hl__content-block--hero {
+	background:linear-gradient(rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
+}
+
+
+/* EYEBROW - <div> element above a title*/
+.hl__eyebrow {
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+}
+
+
+
+/* MEDIA GALLERY */
+.meta-wrapper {
+	padding:0;
+	display:inline;
+}
+
+.meta-wrapper .media-title {
+ display:block;
+ font-family:"TruenoRegular",sans-serif !important;
+ font-size:26px;
+ height:1.5em;
+ line-height:wrap;
+ white-space:nowrap;
+ color: #fff;
+ /* background:transparent url("https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/dots.png") top center repeat; */
+ /* background:#3E6F7D; */
+ background:linear-gradient(0deg, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.0) 100%);
+ position: absolute;
+ bottom: 0;
+ padding: 50px 20px 20px 20px;
+ width: calc(100% - 40px);
+ font-weight:400;
+}
+
+.media-gallery-media .media-gallery-item {
+	padding:0;
+	border:none;
+}
+
+
+
+/* LIST OF POSTS */
+#box-os_events_upcoming-page article {
+	padding:20px 0 40px 0;
+	border-bottom:1px solid silver;
+}
+#box-os_events_upcoming-page article:last-of-type {
+	border-bottom:none;
+}
+
+
+/* pagination */
+.pager-previous, .pager-current, .pager-next {
+	font-family:"TruenoRegular",sans-serif !important;
+}
+
+
+/* LIST OF POSTS - EVENTS SPECIFIC */
+.event-start .event-start {
+	background:#F8C21C;
+	border:none;
+	border-radius:4px;
+}
+.event-start .event-start span {
+	font-family: "TruenoBold",sans-serif !important;
+	font-weight:700;
+  font-size: 14px;
+  color: #1e1e1e;
+}
+/*.event-content h2 {
+	font-weight:normal !important;
+   text-transform:none;
+}*/
+.date-display-single {
+	color:#1e1e1e;
+}
+
+/* EVENT COLUMNS */
+.hl__posts article {
+  max-width: 100%;
+}
+.hl__posts.hl__event-list .sv-list-event {
+	display:grid;
+	grid-template-columns:calc(100%/3 - 30px) calc(100%/3) calc(100%/3 - 30px);
+	grid-gap:20px;
+}
+.hl__posts article:nth-of-type(2) {
+ border-right: 1px solid #c0c0c0;
+ border-left: 1px solid #c0c0c0;
+ padding: 0 20px;
+}
+
+.hl__posts.hl__event-list .event-content, .item-list {
+  margin-top: 0 !important;
+}
+#export-to-google-calendar-dialog-confirm {
+  display: none;
+}
+/*REMOVE SUMMARY FROM EVENT POSTS*/
+.field.field-name-body.field-type-text-with-summary.field-label-hidden.view-mode-teaser {
+  display: none;
+}
+
+
+/*---- WORK IN PROGRESS -- CHANGE TO USE THIS CLASS ----*/
+/* random elements that need to be targeted and restyled */
+/* 3-across list of posts -- can i name it something more generic? */
+.hl__event-columns .node-event {
+	padding:0; /*coming from the general container style */
+}
+.hl__event-columns .sv-list-event,
+.hl__posts.hl__event-list .sv-list-event /*remove once update everything*/ {
+	display:flex;
+	grid-gap:20px;
+}
+.hl__event-columns .date-repeat-rule {
+  display:none; /*put all display:none's together and just comment out what each is for?*/
+}
+
+
+/* CAL EXPORT ICON */
+.cal-export {
+	background-position-x: 70px;
+	background-position-y: -960px;
+}
+.not-front #content-column {
+ font-size:19px;
+}
+.calendar-calendar div.calendar {
+ font-size: 12px;
+}
+
+/* GOOGLE CALENDAR -- most of this gets overridden though :/ */
+.urc-lab-bookings {
+  width: 100%;
+}
+#calendarTitle {
+ font-family: "Trueno",sans-serif !important;
+ font-weight: 700;
+ font-size: 32px;
+ line-height: 42px;
+ text-transform: uppercase;
+ letter-spacing: 2.4px;
+ margin-bottom: 1em;
+}
+#container {
+  margin-top: 32px;
+}
+.calendar-container {
+ font-size:large;
+}
+.st-contents,
+.mv-container {
+ font-size:19px;
+ line-height:1em;
+}
+.mv-daynames-table {
+ height: 10px;
+}
+.mv-event-container {
+ top:20px;
+}
+.st-dtitle {
+ padding:2px;
+}
+
+
+
+/* FOOTER */
+#footer {
+	background:#1e1e1e;
+	padding:0;
+	margin-top:60px;
+}
+#footer .block-inner {
+	margin:0;
+}
+#branding_footer, #powerby-login {
+	display:none;
+}
+#footer .at-panel .region {
+ float:none;
+}
+
+.hl__footer {
+	padding:60px 0;
+}
+#footer h4, #footer p, #footer a {
+	color:#ffffff;
+	letter-spacing:1.87px;
+	line-height:27px;
+	font-size:14px;
+	margin-bottom:1.1em;
+}
+#footer a:hover, #footer a:focus {
+	border-color:rgba(255,255,255,0.3);
+}
+#footer a.hl__icon-list__link:hover, #footer a.hl__icon-list__link:focus {
+	border-color:transparent;
+	opacity:0.8;
+}
+
+#footer p, #footer a {
+	font-family:"TruenoLight",sans-serif !important;
+	font-weight:300;
+	text-transform:uppercase;
+}
+#footer .hl__footer__location p {
+	text-transform:none;
+}
+
+.hl__footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hl__footer__logo {
+  max-width: 180px;
+  flex-basis: 135px;
+  flex-grow: 1;
+  flex-shrink: 1;
+	padding-top:9px;
+	margin-right:30px;
+}
+.hl__footer__links {
+  display: flex;
+  max-width: 680px;
+  width: 100%;
+  flex-basis: 580px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.hl__footer__column {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-left: 30px;
+  width: 50%;
+}
+.hl__footer__content {
+  max-width: 370px;
+  flex-basis: 350px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+}
+.hl__footer__top-links {
+  display: flex;
+}
+#footer .hl__footer__content p, #footer .hl__footer__content a {
+	text-transform:none;
+}
+.hl__footer__social {
+	display:flex;
+	/* padding-right:34px; */
+}
+.hl__footer__social a:first-of-type {
+  margin-right: 25px;
+}
+.hl__footer__social .media-element-container {
+ margin:0;
+}
+
+/* .hl__icon-list__link:last-of-type {
+  margin-left: 25px;
+} */
+.hl__footer__quick-links::before {
+  border-left: 1px solid #414141;
+  content: "";
+  display: block;
+  height: calc(100% + 20px);
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+.hl__footer__quick-links {
+  padding-left: 34px;
+  position: relative;
+}
+.hl__footer__quick-links a:first-of-type {
+  margin-right: 20px;
+}
+
+.hl__footer__license {
+  display: flex;
+  margin-top: 40px;
+}
+.hl__footer__cc-icon {
+  flex: none;
+}
+#footer .hl__footer__cc-text p {
+	color:silver;
+	line-height:23px;
+	margin-left:10px;
+	margin-top:2px;
+	letter-spacing:0;
+}
+#footer .hl__footer__message p, #footer .hl__footer__message a {
+  font-size: 11px;
+  line-height: 19px;
+  color: silver;
+  letter-spacing: 0;
+}
+#footer .hl__footer__message a {
+	color:#ffffff;
+	text-decoration:underline;
+}
+#footer .hl__footer__message a:hover, #footer .hl__footer__message a:focus {
+	border-color: transparent;
+}
+
+
+/*RESPONSIVE & MOBILE*/
+
+/*header*/
+@media (max-width:1008px) {
+	#header-container .block-boxes-os_boxes_site_info {
+		padding-bottom: 0;
+	}
+	.at-panel.gpanel.panel-display.three-col.clearfix {
+		padding-right: 0;
+	}
+	#boxes-box-site_info {
+		margin-left:0;
+		padding:15px 0 !important;
+	}
+	.region-header-third .region-inner {
+		padding-left:20px;
+	}
+	/*#menu-bar #block-os-primary-menu a:hover, #menu-bar #block-os-primary-menu a:focus, #menu-bar #block-os-primary-menu li:hover, #menu-bar #block-os-primary-menu li:focus {
+		background:#f2f2f2 !important;
+	}
+	.mobile-buttons {
+		background:#fff;
+	}*/
+	/*.link-count-mobi-main.first {
+		padding:11px;
+	}*/
+	/*#menu-bar ul.nice-menu li {
+		padding:5px;
+	}
+	#menu-bar #block-os-primary-menu.opened {
+		margin-top:22px;
+	}*/
+	/*.hl_header-logo a {
+		margin-left:14px;
+	}*/
+	/*.hl_title {
+		min-height:300px;
+	}*/
+
+}
+
+
+@media (max-width:480px) {
+	/*.link-count-mobi-main.first {
+		padding:11px;
+	}
+	#menu-bar #block-os-primary-menu.opened {
+		margin-top:22px;
+	}*/
+	/*.hl_title {
+		min-height:100%;
+	}*/
+}
+@media (max-width: 479px) {
+	/*.region-header-second .region-inner {
+		padding-top:0 !important;
+	}
+	#boxes-box-site_info h1 {
+		padding-top:15px;
+	}
+	#boxes-box-site_info h1 a {
+		padding-left:0;
+	}*/
+}
+
+
+
+</style>

@@ -1,0 +1,234 @@
+/* UNIVERSAL ELEMENTS: CONTAINER */
+/*---- FULL WIDTH ELEMENTS ----*/
+#header-container, #columns,
+/* #boxes-box-site_info h1 a,
+#menu-bar nav:first-of-type,
+#menu-bar #block-os-primary-menu, */
+#footer .gpanel
+/* .region-footer,
+.message-inner,
+#powerby-login  */
+{
+	width:100%;
+	margin:0;
+}
+
+.page-node #content-column .content-inner {
+	padding:0;
+}
+
+/* PAGE MARGINS */
+.hl__container-margins /*add css class to any container you want to have margins*/,
+#content-column .hl__full-width .block-inner /*full width cta - NEED THIS??*/,
+#header-panels .hl__hero .block-inner /*INNOVATION ONLY header hero*/,
+#columns .breadcrumb /*page breadcrumbs*/,
+#main-content-header, #block-os-pages-main-content /*main content block*/,
+.node-media-gallery /*media gallery*/,
+.view-os-events /*event calendar*/, .node-event /*event detail*/ {
+  width:100%;
+  max-width:1450px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/* small size, centered */
+.hl__container-margins--small {
+  max-width: 930px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* medium size, centered */
+.hl__container-margins--medium {
+	max-width:1080px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* spacing between blocks */
+#content-panels .block {
+ margin-bottom: 120px;
+}
+
+/* remove top border from blocks (Crimson Theme) */
+.front #content-column .block, .node-person .block-inner, .comment-wrapper {
+	border-top:none;
+}
+
+
+
+
+/*---- CHILD THEME HEADER BAR ----*/
+/* remove original header and margins */
+div#branding_header {
+	display: none;
+}
+.header-left.header-main.header-right .region-header-second .region-inner {
+	margin:0;
+}
+
+/*BANNER COLOR -- CHOOSE ONE*/
+#header {
+	background-image: linear-gradient(45deg, #F8C21C 0%, #FBE08E 100%); /* yellow*/
+}
+
+
+/*BANNER FONT -- CHOOSE ONE*/
+/*Lora*/
+#boxes-box-site_info h1 a {
+    font: italic 400 32px/40px "Lora",Georgia, serif !important;
+    padding-left:25px;
+    color: #1e1e1e;
+}
+#boxes-box-site_info h1 {
+    line-height:1;
+}
+
+/*Trueno*/
+#boxes-box-site_info h1 {
+    line-height:1;
+    font-size: 26px;
+}
+#boxes-box-site_info h1 a {
+    font-family: "TruenoBold",sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 1.52px;
+    line-height: 1;
+    color: #1e1e1e;
+    text-transform:uppercase;
+}
+
+/*BANNER HEIGHT*/
+#header /*full width banner*/,
+#header-container .block-boxes-os_boxes_site_info /*banner-left*/,
+.region.region-header-third /*banner-right*/,
+.region.region-header-second /*banner container*/ {
+	min-height: 61px;
+	max-height: 61px;
+}
+
+/*BANNER LOGO*/
+/* right align logo */
+.region.region-header-third {
+	background: #1e1e1e;
+	width: 320px;
+	text-align: center;
+	margin-left: -320px;
+}
+/* vertical-align logo -- choose one */
+.region-header-third .region-inner {
+  padding:15px 0; /*with lora font*/
+	padding: 17px 0; /*with trueno font*/
+}
+
+
+
+
+/*---- BULLETS ----*/
+#content-column li {
+	list-style:none;
+}
+#content-column li::before {
+	color: #0579b8;
+	content: '\2022';
+	display: inline-block;
+	font-size: 1.5em;
+	max-height: 0;
+	max-width: 0;
+	position: relative;
+	left: -10px;
+	top: 4px;
+}
+#content-column .block ul {
+ list-style:disc;
+ padding-left: 10px;
+}
+
+
+
+
+/*---- CONTENT BLOCK ----*/
+.hl__content-block {
+  background: gray; /* default color */
+
+  /* helps position background images if added */
+  background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+#content-column .hl__content-block .block-inner {
+  padding: 120px 0;
+  text-align: center;
+
+  /* same as .hl__container-margins--small */
+  max-width: 930px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hl__content-block .boxes-box-content > * {
+  color: #FFFFFF; /* for dark wash or dark colored backgrounds */
+}
+.hl__content-block__dark-text .boxes-box-content > *,
+.hl__content-block--dots .boxes-box-content > * {
+  color: #1E1E1E; /* for light wash, light colored, dotted backgrounds */
+}
+
+/* dark wash */
+.hl__content-block--image-dark {
+	background:linear-gradient(rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
+}
+
+/* light wash */
+.hl__content-block--image-light {
+	background:linear-gradient(rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.9)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
+}
+
+
+/* dotted background */
+.hl__content-block--dots {
+	background:#FFFFFF url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/dots.png) top center repeat;
+}
+#content-column .hl__content-block--dots .block-inner {
+  padding:60px;
+  text-align:left; /*left-aligned content*/
+  max-width:1450px;
+}
+.hl__content-block--dots .boxes-box-content > * {
+  color: #1E1E1E; /* for light wash, light colored, dotted backgrounds */
+}
+.hl__content-block--dots p {
+	font-size:28px;
+	line-height:41px;
+	font-style: italic;
+	font-family: "Lora",Georgia,serif !important;
+}
+
+
+/* custom backgrounds go here */
+
+
+
+
+
+
+/* random elements that need to be targeted and restyled */
+/* 3-across list of posts -- can i name it something more generic? */
+.hl__event-columns .node-event {
+	padding:0; /*coming from the general container style */
+}
+.hl__event-columns .sv-list-event {
+	display:flex;
+}
+.hl__event-columns .date-repeat-rule {
+  display:none; /*put all display:none's together and just comment out what each is for?*/
+}
