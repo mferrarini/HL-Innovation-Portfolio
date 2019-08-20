@@ -465,12 +465,12 @@ ul.pager.mini-pager {
   margin-top: 60px;
   margin-bottom: -30px !important;
 }
-.hl__story__people--list {
+.hl__story__people--no-images {
 	margin-top:30px;
   padding-left:0;
   padding-right:0;
 }
-.hl__story__people--list .block-inner {
+.hl__story__people--no-images .block-inner {
   padding-left:50px;
   padding-right:50px;
 }
@@ -480,7 +480,7 @@ ul.pager.mini-pager {
 	flex-wrap: wrap;
   /* grid-gap: 30px 60px; */
 }
-.hl__story__people--list .boxes-box-content {
+.hl__story__people--no-images .boxes-box-content {
 	display: block; /* when no images */
 }
 
@@ -1125,7 +1125,7 @@ img.media-element.file-default {
 }
 
 /* custom backgrounds */
-.hl__story-template {
+.hl__bone-box {
 	background:linear-gradient(rgba(42,70,92,0.80), rgba(42,70,92,0.80)), url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/bone-pile.jpg);
 }
 

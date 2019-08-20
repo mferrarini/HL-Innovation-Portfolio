@@ -1,4 +1,3 @@
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -11,6 +10,7 @@ $("input").attr("placeholder", "Search this site");
 </script>
 
 <style>
+/* <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/> */
 /* <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lora&display=swap" type="text/css"/> */
 
 /*---- FULL WIDTH ELEMENTS ----*/
@@ -73,6 +73,10 @@ h1#page-title, #block-os-pages-main-content .block-inner, /* for page content wi
 /* remove top border from blocks (Crimson Theme) */
 .front #content-column .block, .node-person .block-inner, .comment-wrapper {
 	border-top:none;
+}
+
+.media-element-container {
+	margin:0;
 }
 
 
