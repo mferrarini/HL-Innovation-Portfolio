@@ -187,7 +187,8 @@ h1#page-title {
 }
 
 /*SECTION HEADERS*/
-.boxes-box-content h2, h2.block-title {
+.boxes-box-content h2, h2.block-title,
+.hl__story__summary h3 {
   /* font-family:"TruenoBold",sans-serif !important; */
   font-family:"TruenoRegular",sans-serif !important;
   font-weight:700;
@@ -1085,7 +1086,7 @@ img.media-element.file-default {
 /*---- QUICK FACTS ----*/
 .hl__quick-facts {
 	/* should we have a default background? */
-	background:gray;
+	background:linear-gradient(-46deg,#0579b8 0%,#2a5280 100%);
 	padding:100px;
 
 	background-repeat:no-repeat;
@@ -1125,7 +1126,7 @@ img.media-element.file-default {
 }
 
 /* custom backgrounds */
-.hl__story-template {
+.hl__quick-facts__custom-bg {
 	background:linear-gradient(rgba(42,70,92,0.80), rgba(42,70,92,0.80)), url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/bone-pile.jpg);
 }
 
@@ -1392,6 +1393,23 @@ img.media-element.file-default {
 	}
 } */
 
+/* Quick fixes for photo layouts */
 
+div#boxes-box-1566422055 {
+    float: right !important;
+}
+
+.region.region-two-33-66-second {
+    float: right !important;
+}
+
+#block-boxes-1567195792 .hl__story__main-content {
+    background: transparent;
+}
+
+/* prevents Story page (with search box) from appearing in list of posts */
+article#node-1457426 {
+  display:none;
+}
 
 </style>
