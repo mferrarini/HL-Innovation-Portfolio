@@ -1,0 +1,908 @@
+<link rel="shortcut icon" href="https://libapps.s3.amazonaws.com/accounts/65995/images/HL-logo_favicon.png" type="image/vnd.microsoft.icon">
+<script>document.title = "Ask a Librarian | Harvard Library"</script>
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/> -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+<script src="https://api2.libanswers.com/1.0/widgets/8684"></script>
+<script>
+$(document).ready(function() {
+	if ($(window).width() < 430) {
+        $("#s-la-content-search-query-19074").attr('placeholder', 'Try "HOLLIS"');
+    }
+    else {
+        $("#s-la-content-search-query-19074").attr('placeholder', 'Try "printer help" or "HOLLIS"');
+    }
+    $(window).resize(function () {
+        if ($(window).width() < 430) {
+            $("#s-la-content-search-query-19074").attr('placeholder', 'Try "HOLLIS"');
+            }
+        else {
+            $("#s-la-content-search-query-19074").attr('placeholder', 'Try "printer help" or "HOLLIS"');
+        }
+    });
+});
+</script>
+
+<style>
+/*LOCAL FONT LOAD-IN*/
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenorg-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenorg-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenorgit-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenorgit-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoultlt-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoultlt-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoultltit-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoultltit-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenolt-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenolt-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoltit-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoltit-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenosbd-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenosbd-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenosbdit-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenosbdit-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenobd-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenobd-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenobdit-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenobdit-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoblk-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoblk-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Trueno";
+    src: url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoblkit-webfont.woff2") format("woff2"), url("https://library.harvard.edu/themes/custom/harvard/assets/fonts/truenoblkit-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: italic
+}
+
+/*FONT SMOOTHING*/
+html {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+}
+
+/*FONT STLYES*/
+body, a.hl_header-ask_title {
+	font-family:'Lora',Georgia,serif !important;
+}
+
+h1 {
+	font-family:'Trueno','Montserrat',sans-serif !important;
+	font-weight:700;
+	color:#1E1E1E !important;
+	font-size:60px !important;
+	line-height:74px !important;
+	padding-top:30px;
+}
+
+.s-la-public-home.s-la-public-header-text {
+	text-align:left;
+}
+
+.s-la-box-title h2, .s-la-widget .color_head {
+	font-family:'Trueno','Montserrat',sans-serif !important;
+	font-weight:700;
+	color:#1E1E1E !important;
+	font-size:32px !important;
+	line-height:42px !important;
+	text-transform:uppercase !important;
+	letter-spacing:2.4px !important;
+}
+
+h3, #libchat_modal_title {
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-weight:700;
+	color:#1E1E1E;
+	font-size:20px !important;
+	line-height:30px !important;
+	text-transform:uppercase;
+	letter-spacing:1.5px;
+}
+
+h4 {
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-weight:600;
+	color:#1E1E1E;
+	font-size:20px;
+	line-height:30px;
+	text-transform:uppercase;
+	letter-spacing:2.14px;
+}
+
+h5 {
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-weight:600;
+	color:#1E1E1E;
+	font-size:19px;
+	line-height:29px;
+}
+
+h6 {
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-weight:600;
+	color:#1E1E1E;
+	font-size:16px;
+	line-height:28px;
+}
+
+p, .s-la-faq-answer {
+	color:#414141 !important;
+	font-size:19px !important;
+	line-height:32px !important;
+}
+
+.p-small {
+	color:#414141;
+	font-size:15px;
+	line-height:26px;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*BUTTONS & LINKS*/
+
+
+/*LINKS*/
+a, .s-la-widget a {
+	font-family:'Trueno','Montserrat',sans-serif;
+}
+#s-la-page-maincontent a, .s-la-widget a {
+	font-size:19px;
+	color:#0579b8;
+	font-weight:700;
+	transition:border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+	-webkit-transition:border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+}
+#s-la-page-maincontent a:hover, #s-la-page-maincontent a:focus, .s-la-widget a:hover, .s-la-widget a:focus {
+	border-bottom:3px solid rgba(5,121,184,0.3);
+	text-decoration:none;
+}
+
+
+
+/*B&W BUTTON*/
+button, .btn, #libchat_e51326de242dae8568d89faec0d175ef button, .btn-primary, #s-la-content-text-58048 a.button, #s-la-content-text-58050 a.button {
+	font-family:"Trueno",'Montserrat',sans-serif !important;
+	font-weight:700;
+	letter-spacing:1.17px !important;
+	text-transform:uppercase;
+	display: inline-block;
+    padding: 6px 12px;
+    text-align:center;
+    border: 1px solid #1e1e1e !important;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #1E1E1E;
+    width: 100%;
+    font-size:14px;
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+}
+
+button:hover, .btn:hover, #libchat_e51326de242dae8568d89faec0d175ef button:hover, .btn-primary:hover, #s-la-content-text-58048 a.button:hover, #s-la-content-text-58050 a.button:hover,
+button:focus, .btn:focus, #libchat_e51326de242dae8568d89faec0d175ef button:focus, .btn-primary:focus, #s-la-content-text-58048 a.button:focus, #s-la-content-text-58050 a.button:focus {
+	background:#6c6c6c !important;
+	border-color:#6c6c6c !important;
+	color:#fff !important;
+}
+
+/*BLUE BUTTON - LIBCHAT + FORM WIDGETS*/
+#libchat_modal_10132 button, #autoload_btn button, #s-la-askform-submit-8684, .modal-footer button, #s-la-askform-submit-0 {
+ 	background:#0579b8;
+ 	border-color:transparent !important;
+ 	color:#fff;
+ }
+#libchat_modal_10132 button:hover, #autoload_btn button:hover, #s-la-askform-submit-8684:hover, .modal-footer button:hover, #s-la-askform-submit-0:hover,
+#libchat_modal_10132 button:focus, #autoload_btn button:focus, #s-la-askform-submit-8684:focus, .modal-footer button:focus, #s-la-askform-submit-0:focus {
+ 	background:#2a5280 !important;
+ 	border-color:transparent !important;
+ 	color:#fff;
+ }
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*HEADER STYLE*/
+.container {
+	padding:0;
+}
+.hl_header, .container.hl_footer {
+	width:100%;
+}
+.ahtl_header-ask {
+	background:#ffffff;
+}
+.ahtl_header-ask img {
+	height:80px;
+	margin-left:-20px;
+}
+section.hl_header-ask {
+	display:flex;
+	background: #ffffff;
+}
+.hl_header-ask_title, .hl_header-ask_title:hover, .hl_header-ask_title:focus {
+	font-size:24px;
+	line-height:1.3;
+	color:#fff;
+	-webkit-box-flex:1;
+	-ms-flex:auto;
+	flex:auto;
+	font-size:24px;
+	font-style:italic;
+	font-weight:400;
+	line-height:40px;
+	margin:0;
+	padding:20px 25px;
+	float:left;
+	background:rgb(41,51,82);
+	text-decoration:none;
+}
+.hl_header-ask_title span.ask {
+    font-size: 32px;
+    line-height: 1.25;
+    font-family: "Trueno",'Montserrat',sans-serif;
+		font-weight:600;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.52px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.hl_header-ask_logo {
+	height:80px;
+	max-width:502px;
+    background-color: #1e1e1e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    float:right;
+}
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*MAIN SEARCH BAR - ADDITIONAL STYLING*/
+
+/*PADDING ABOVE H1*/
+h1#s-la-public-header-title {
+	margin-top:50px;
+}
+
+/*SEARCH BOX*/
+#s-la-content-search-19074 .form-group {
+	border:1px solid #1e1e1e;
+	border-radius:3px;
+}
+#s-la-content-search-query-19074 {
+	padding:5px 10px;
+	/*margin-right:10px;*/
+	margin:1px;
+	border:none;
+	height:37px;
+	font-family:'Trueno','Montserrat', sans-serif;
+	font-weight:200;
+	font-size:16px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+/*OVERALL WIDTH OF BOX*/
+@media (min-width: 768px) {
+.navbar-form .s-la-content-search-query {
+	min-width:610px !important;
+}
+}
+
+/*WIDTH OF SEARCH BUTTON*/
+.col-xs-3.s-la-searchform-buttoncol {
+	max-width: 115px;
+	float:right;
+}
+
+/*SEARCH BUTTON*/
+button.s-la-searchform-button, .s-la-searchform-button:active, .s-la-searchform-button:focus, .s-la-searchform-button:hover {
+	color: #1E1E1E;
+    font-weight: 700;
+    border-color: transparent !important;
+    border-left: 1px solid #1e1e1e !important;
+    background: #fff;
+    margin: 10px 1px;
+    padding: 0 20px;
+    border-radius: 0;
+    font-size: 12px;
+    float:right;
+    max-width:115px;
+}
+.s-la-searchform-button:focus, .s-la-searchform-button:hover {
+	color: #6c6c6c !important;
+	background:#fff !important;
+}
+
+/*RIGHT FACING ARROW > */
+button.s-la-searchform-button:after, #s-la-content-link-58051 a:after {
+	border-bottom: 5px solid transparent;
+    border-left: 7px solid #0579b8;
+    border-top: 5px solid transparent;
+    content: "";
+    display: inline-block;
+    margin-left: 7px;
+}
+
+/*FONT OF AUTOCOMPLETE LIST*/
+ul#s-la-content-search-query-19074_list {
+	font-family:"Trueno",'Montserrat',sans-serif;
+	font-weight:200;
+}
+
+/*KEEP SEARCH BOX OPEN*/
+.navbar-header {
+	display:none;
+}
+#s-la-browsebar-collapse {
+	display:block;
+}
+
+/*"SEARCH FAQS" TEXT BEFORE SEARCHBOX*/
+
+#s-la-searchform-19074:before {
+    content: "Search FAQs";
+    margin-right: 20px;
+    flex: none;
+    -webkit-box-flex: 0;
+    font-family: "Trueno",'Montserrat',sans-serif;
+    font-size: 20px;
+    /* font-weight: 600; */
+    letter-spacing: 1.5px;
+    line-height: 2.0;
+    text-transform: uppercase;
+    float: left;
+}
+#s-la-page-8413 #s-la-searchform-19074:before {
+    content:"";
+    margin-right:0;
+}
+/*HIDE "SEARCH FAQS" WHEN SCREEN GETS TOO SMALL - WORK ON FIXING LATER*/
+@media (max-width: 768px) {
+#s-la-searchform-19074:before {
+	content:"";
+}
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*PADDING & ALIGNMENT*/
+#s-la-content-search-19074 .col-xs-9, #s-la-content-search-19074 .col-xs-3.s-la-searchform-buttoncol, .s-la-box-content, .navbar-collapse {
+	padding:0;
+}
+#s-la-page-title-bar .navbar-form, .s-la-color-bars {
+	padding-left:0;
+}
+.s-la-box-container {
+	margin:40px 0;
+}
+
+
+/*SEARCH RESULTS BOX*/
+#s-la-box-55074-container {
+	margin-bottom:0px;
+}
+.navbar {
+	padding-right:40px;
+}
+
+/*CHAT/SUBMIT COLUMNS*/
+#s-la-content-text-58048 .col-md-6:first-of-type, #s-la-content-text-58050 .col-md-6:first-of-type {
+	padding:0 25px 0 0;
+}
+#s-la-content-text-58048 .col-md-6:last-of-type, #s-la-content-text-58050 .col-md-6:last-of-type {
+	padding:0 0 0 25px;
+}
+#s-la-content-text-58048 .col-md-6 h3, #s-la-content-text-58050 .col-md-6 h3 {
+	margin-top:0;
+}
+@media (max-width:991px) {
+	#s-la-content-text-58048 .col-md-6:first-of-type, #s-la-content-text-58050 .col-md-6:first-of-type,
+	#s-la-content-text-58048 .col-md-6:last-of-type, #s-la-content-text-58050 .col-md-6:last-of-type {
+		padding:0;
+	}
+	#s-la-content-text-58048 .col-md-6 h3, #s-la-content-text-58050 .col-md-6 h3 {
+		margin-top:30px;
+	}
+}
+
+
+/*SEE ALL FAQs*/
+#s-la-content-link-58051 {
+	text-align:right;
+}
+
+/*WIDTH OF ANSWERS*/
+#s-srch-source-0 .row .col-md-9, #s-la-box-20342-container, #s-la-content-faqlist-58047, #s-la-content-link-58051  {
+	max-width:930px;
+}
+
+/*POPULAR QUESTIONS BOX*/
+/*#s-la-box-55085-container {
+	padding:30px 0 0 0;
+}*/
+.s-la-content-faqlist ul {
+	margin:0;
+}
+
+
+
+/*GET MORE HELP BOX*/
+#s-la-box-58493-container /*GET PERSONALIZED HELP*/, #s-la-box-58495-container /*MORE HELP OPTIONS*/ {
+	padding:40px 0;
+	border-top:1px solid rgb(192,192,192);
+}
+
+/*SEARCH BOX ON RESULTS + ANSWER PAGES*/
+/*TOP*/ .s-la-header, .s-la-box-title {
+	padding:0 0 40px 0;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*SEARCH RESULTS PAGE*/
+
+/*SHOWING # - # (OF #)*/
+.s-srch-range.pull-left {
+	color: #6c6c6c;
+    font-family: 'Trueno','Montserrat', sans-serif;
+		font-weight:200;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/*SORT BY BUTTON*/
+#s-srch-sort-0-btn, #s-srch-sort-0-btn {
+	padding:1px 5px;
+	font-size:12px;
+	line-height:1.5;
+	border-color:#adadad !important;
+	background:#f3f3f3 !important;
+	color:#1e1e1e !important;
+}
+
+/*DROPDOWN MENU*/
+ul.dropdown-menu li a {
+	font-size:16px !important;
+	color:#1e1e1e !important;
+}
+ul.dropdown-menu li a:hover {
+	border-bottom:none !important;
+}
+
+#s-srch-source-0 .row .col-md-9:nth-child(4), #s-srch-source-0 .row .col-md-9:nth-child(5) {
+	display:none;
+}
+
+/*PAGINATION*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+	color:#fff !important;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*CHAT WITH A LIBRARIAN WIDGET*/
+
+/*PADDING ABOVE CHAT BUTTON*/
+#libchat_e51326de242dae8568d89faec0d175ef {
+	margin-top:-20px;
+}
+
+/*OFFLINE*/
+#libchat_e51326de242dae8568d89faec0d175ef button.libchat_offline {
+	cursor:not-allowed !important;
+	color: #6c6c6c !important;
+    background: #6c6c6c7d !important;
+    border: transparent !important;
+}
+
+#s-lch-login-form {
+	font-size:19px;
+}
+
+.s-la-widget .container {
+	max-width:450px;
+	padding:10px;
+}
+
+.s-lch-form-actions button.btn-xs {
+	margin:0;
+}
+
+/*QUESTION FORM POPUP*/
+.s-ui-filedrop.has-advanced-upload .s-ui-filedrop-clear {
+	width:100px;
+	font-size:10px;
+}
+.s-ui-filedrop.has-advanced-upload .s-ui-filedrop-clear:hover {
+	background-color:#6c6c6c;
+	border-color:#6c6c6c;
+	color:#fff;
+}
+#s-la-askform-0 {
+	font-family:"Trueno",'Montserrat',sans-serif;
+}
+
+
+/*SLIDE-OUT WIDGET - THINGS INSIDE FORM ADDED TO CSS ON WIDGET PAGE, EXCLUDING BUTTONS/TABS*/
+#iframe_e51326de242dae8568d89faec0d175ef {
+	padding:10px;
+}
+
+/*TAB*/
+.s-la-widget .btn-chat, #lcs_slide_out-10272 header a {
+    background-color: #0579b8;
+    border-color: transparent !important;
+		font-family:"Trueno",'Montserrat',sans-serif !important;
+		letter-spacing:1.17px !important;
+		text-transform:uppercase;
+    padding: 5px 9px;
+    font-size:14px;
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+}
+.s-la-widget .btn-chat:hover, .s-la-widget .btn-chat:focus,
+#lcs_slide_out-10272 header a:hover, #lcs_slide_out-10272 header a:focus {
+	text-decoration:none;
+	background-color:#2a5280 !important;
+	padding:10px;
+}
+
+/*MAIN BUTTON*/
+#lcs_slide_out-10272 header a {
+    border-width:0 !important;
+    border-radius:0 0 4px 4px;
+    padding:10px;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*SUBMIT YOUR QUESTION WIDGET*/
+.modal-content {
+	font-family:'Trueno','Montserrat',sans-serif;
+}
+#s-la-modal-close {
+	border:none !important;
+}
+#s-la-modal-close:hover {
+	background:transparent !important;
+	color:#1e1e1e !important;
+	opacity:1;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*FOOTER STYLING*/
+.hl_footer {
+	background:#1E1E1E;
+	padding:40px 20px; /*change later*/
+	font-family:"TreunoLight",sans-serif;
+	/*text-transform:uppercase;*/
+}
+.hl_footer-ask {
+	max-width:1450px;
+	margin:0 auto;
+	/*padding:0 20px;*/
+}
+.hl_footer ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.hl_footer li {
+	margin:10px 0;
+}
+
+.col-md-3, .col-md-2, .col-md-5 {
+    padding: 0;
+}
+
+.container.hl_footer a, .container.hl_footer h4, .container.hl_footer li {
+	color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 1.87px
+}
+.hl_footer-policy p {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    color: silver !important;
+    font-weight: 300 !important;
+}
+
+.hl_footer-ask-logo {
+	text-align:center;
+}
+.hl_footer-contact h4, .hl_footer-extlinks li:first-of-type, .hl_footer-policy h4 {
+	margin-top:0;
+}
+
+/*FOOTER LINKS*/
+.hl_footer-contact a, .hl-footer_extlinks a {
+	font-weight:200;
+	transition:border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+	-webkit transition:border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+}
+
+.hl_footer-contact a:hover, .hl_footer-extlinks a:hover,
+.hl_footer-contact a:focus, .hl_footer-extlinks a:focus {
+	border-bottom: 3px solid rgba(255,255,255,0.3);
+    padding-bottom: 3px;
+    text-decoration: none;
+    color:#fff;
+}
+
+@media (max-width:991px) {
+	.hl_footer-ask {
+		max-width:750px;
+		margin:0 auto;
+	}
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+
+/*HIDDING*/
+
+/*hide # answers, search all/group part of search bar*/
+.navbar-text, .s-la-navbrowse {
+	display:none;
+}
+
+/*hide "search faqs" title on single search and faq page*/
+.s-la-page-public.s-la-page-single.search h1, .s-la-page-public.s-la-page-faq h1 {
+	display:none;
+}
+
+/*"search results for:" header on search results page*/
+.s-srch-top-header {
+	display:none;
+}
+.s-srch-askbutton p.alert.alert-info {
+	background-color:transparent;
+	border-color:transparent;
+}
+.s-srch-askbutton .alert {
+	padding:0;
+}
+/*REMOVE PADDING FROM ALERT WHEN THERE IS A RESULTS LIST*/
+.col-md-9 .row .s-srch-askbutton .alert {
+	padding:0 15px;
+}
+.s-srch-askbutton .btn {
+	display:none;
+}
+
+
+/*hide topics, keywords, groups filters on search results page*/
+#s-srch-source-0 .row .col-md-3 {
+	display:none;
+}
+
+/*hide previous banner header*/
+#s-la-public-banner {
+	display:none;
+}
+
+/*hide breadcrumbs*/
+#s-la-bc {
+	display:none;
+}
+
+/*hide question meta data (last updated, views)*/
+.s-la-faq-listing-meta, .s-srch-result-meta {
+	display:none;
+}
+
+/*remove springshare footer info*/
+#s-la-public-footer {
+	display:none;
+}
+
+
+
+/*remove bottom border between questions */
+li.s-la-faq-listing {
+	border:none;
+	margin-bottom:0;
+}
+.s-srch-result {
+	border:none;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+@media (max-width:768px) {
+	.container {
+		padding:0 20px;
+	}
+	.navbar-toggle {
+		margin:0 0 8px 0;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border:none;
+	}
+	.container.hl_footer {
+		padding:20px;
+	}
+}
+.navbar-form {
+	padding:0;
+	margin:0;
+}
+
+@media (max-width:745px) {
+	section.hl_header-ask {
+		flex-wrap:wrap;
+	}
+	.hl_header-ask-logo {
+		width:100% !important;
+	}
+	button.s-la-searchform-button:after {
+		display:none;
+	}
+	button.s-la-searchform-button {
+		width:auto;
+	}
+/*	.ahtl_header-ask img {
+		height:70px;
+	}*/
+}
+/*@media (max-width:475px) {
+	.ahtl_header-ask img {
+		height:60px;
+		margin-left:-5px;
+	}
+}
+@media (max-width:375px) {
+	.ahtl_header-ask img {
+		height:50px;
+	}
+}*/
+
+
+
+
+
+
+
+/*UNDER CONSTRUCTION*/
+.s-srch-params {
+	display:none;
+}
+.under-construction {
+	height:80px;
+	background:red;
+}
+.under-construction p {
+	height:40px;
+	padding:30px 0;
+	text-align:center;
+	color:#fff !important;
+	font-weight:400;
+	font-family:"Trueno",'Montserrat',sans-serif;
+	line-height:22px !important;
+}
+.under-construction a {
+	color:#fff;
+	text-decoration:underline;
+}
+@media (max-width:970px) {
+	.under-construction p {
+		padding:20px 0;
+		font-size:16px !important;
+	}
+}
+@media (max-width:510px) {
+	.under-construction p {
+		padding:8px 0;
+	}
+}
+@media (max-width:340px) {
+	.under-construction {
+		height:100px;
+	}
+}
+
+
+
+
+
+
+
+</style>

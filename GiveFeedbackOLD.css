@@ -1,0 +1,160 @@
+/* Place your CSS here */
+.Skin #SkinContent{
+	font-family: 'TruenoBold',Montserrat,sans-serif;
+	color:#1e1e1e;
+
+}
+
+@media (min-width: 770px){
+.Skin {
+    width: 770px;
+    max-width: 95%;
+	margin: 0 auto;
+}
+}
+
+.Skin #SkinContent .ChoiceStructure{
+	font-family: 'TruenoRegular',Montserrat,sans-serif;
+	color:#1e1e1e;
+}
+
+.Skin .QuestionBody Table{
+	margin-top:30px;
+}
+
+.Skin #SkinContent .ChoiceStructure th{
+	font-family: 'TruenoBold',Montserrat,sans-serif;
+	color:#1e1e1e;
+}
+.Skin select{
+	width:100%;
+	font-family: 'TruenoRegular',Montserrat,sans-serif;
+	color:#1e1e1e;
+}
+.Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton{
+	background-color:#0579b8;
+	font-family: 'TruenoRegular',Montserrat,sans-serif;
+	font-size:10px;
+	letter-spacing:1.17px;
+	color: #FFFFFF;
+}
+.Skin .QuestionBody{
+	font-size:12px;
+	color:#1e1e1e;
+	line-height:1.53;
+}
+
+img{
+	padding-bottom:20px;
+}
+
+
+.Skin label.SingleAnswer.q-checked span::before, .Skin label.SingleAnswer.q-checked.q-focused span::before, .Skin label.q-radio.q-checked, .Skin label.q-radio.q-checked.q-focused {
+	border: 2px solid #0579b8;
+	background: #0579b8!important;
+}
+
+.Skin .Matrix .QuestionBody, .Skin .SBS .QuestionBody{
+	font-size:12px;
+	color:#1e1e1e;
+	line-height:1.53;
+}
+.Skin .QuestionText{
+	color:#1e1e1e;
+	font-weight:400;
+	font-size:20px;
+}
+
+.QID1 .Skin .QuestionText{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.Skin .QuestionBody{
+	padding-bottom:75px !important;
+}
+.Skin .TE textarea:focus, .Skin input.TextEntryBox:focus, .Skin input[type=text]:focus, .Skin input[type=password]:focus, .Skin input[type=search]:focus, .Skin select:focus, .Skin textarea:focus{
+	border-color:#0579b8;
+	border: 1px solid #1E1E1E;
+	background-color: #fff;
+	border-radius: 4px;
+	Font-family: TruenoRegular, Montserrat, sans-serif;
+}
+.Skin .MC .TextEntryBox:focus, .Skin .TE .ESTB .InputText:focus, .Skin .TE .FORM .InputText:focus, .Skin .TE .ML .InputText:focus, .Skin .TE .PW .InputText:focus, .Skin .TE .SL .InputText:focus, .Skin .TE textarea:focus, .Skin input.TextEntryBox:focus, .Skin input[type=text]:focus, .Skin input[type=password]:focus, .Skin input[type=search]:focus, .Skin textarea:focus{
+	border-color:#0579b8;
+	border: 1px solid #1E1E1E;
+	background-color: #fff;
+	border-radius: 4px;
+	Font-family: TruenoRegular, Montserrat, sans-serif;
+}
+.JFEScope .Skin .q-matrix .table-cell{
+	font-size:12px;
+	color:#1e1e1e;
+	line-height:1.53;
+	font-family: 'TruenoRegular',Montserrat,sans-serif;
+}
+
+.Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton{
+	Font-family: TruenoBold, Montserrat, sans-serif;
+	Font-size: 14px;
+	padding: 15px 25px;
+}
+
+ .Skin #Buttons #NextButton:hover, .Skin #Buttons #PreviousButton:hover {
+	background:#2a5280 !important;
+	border-color:#2a5280 !important;
+	Font-family: TruenoBold, Montserrat, sans-serif;
+	Font-size: 14px;
+	padding: 15px 25px;
+}
+.Skin label.SingleAnswer span::before{
+	border-color:#1e1e1e;
+	border-width:1px;
+}
+.Skin textarea{
+	font-family:'TruenoRegular',Montserrat,sans-serif;
+	color:#1e1e1e;
+}
+
+.Skin .MC .TextEntryBox, .Skin .TE .ESTB .InputText, .Skin .TE .FORM .InputText, .Skin .TE .ML .InputText, .Skin .TE .PW .InputText, .Skin .TE .SL .InputText, .Skin .TE textarea, .Skin input.TextEntryBox, .Skin input[type=text], .Skin input[type=password], .Skin input[type=search], .Skin textarea{
+	border: 1px solid #1E1E1E;
+	background-color: #fff;
+	border-radius: 4px;
+	Font-family: TruenoRegular, Montserrat, sans-serif;
+}
+
+/*Full Screen Only*/
+@media (min-width : 595px){
+	.Skin .MC .Inner .InnerInner .QuestionBody .TextEntryBox{
+		margin-left:40px;
+	}
+
+	.Skin .MC .DL .QuestionBody{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
+
+}
+
+/*Header*/
+.Skin .SkinInner {
+	padding-top:0px;
+}
+
+.Skin #Header{
+	padding:0px;
+	background-color:#1e1e1e;;
+	margin-bottom:50px;
+	height:62px;
+}
+
+#Header img{
+margin-top:20px;
+}
+
+
+@media (min-width: 770px)
+.Skin .SkinInner {
+    width: 770px;
+    max-width: 95%;
+}

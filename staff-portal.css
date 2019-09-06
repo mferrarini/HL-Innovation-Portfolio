@@ -1,0 +1,664 @@
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<style>
+
+/*SO THAT HERO IMAGE CAN SPAN ENTIRE WIDTH OF PAGE*/
+#columns {
+	width:100%;
+	margin: 0 auto
+}
+/*ALL OTHER CONTENT ON PAGE HAS MORE PADDING - ADD THIS CLASS TO WIDGETS*/
+.hl_content-align {
+	width:85%;
+	margin:0 auto;
+}
+/*ALL PAGES EXCEPT HOMEPAGE*/
+#main-content-header {
+	margin-top:80px;
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*GENERAL TYPOGRAPHY*/
+body * {
+  font-family:"Trueno",sans-serif !important;
+	color:#1e1e1e;
+	font-style:normal;
+}
+p, .hl_posts i, .hl_posts em {
+	font-family:"Lora",Georgia,serif !important;
+	font-size:15px;
+	line-height:28px;
+	color:#414141;
+}
+
+/*PAGE TITLES*/
+h1#page-title {
+	font-family:"Trueno",sans-serif !important;
+  font-weight:700;
+	font-size:64px;
+	line-height:74px;
+	text-align:center;
+	text-transform:uppercase;
+
+	/*mobile*/
+	/*font-size:32px;
+	line-height:40px;*/
+}
+
+/*SUBTITLES*/
+#block-os-pages-main-content .field-item:first-of-type, #block-os-pages-main-content .field-item:first-of-type p, #block-os-pages-main-content .field-item:first-of-type a {
+	font-family:"Lora",Georgia,serif !important;
+	font-style:italic;
+	font-size:26px;
+	line-height:40px;
+	text-align:center;
+
+	/*mobile
+	font-size:22px;
+	line-height:24px;*/
+
+}
+
+/*SECTION HEADERS*/
+.boxes-box-content h2, h2.block-title {
+	font-family:"Trueno",sans-serif !important;
+  font-weight:700;
+	font-size:32px;
+	line-height:42px;
+	text-transform:uppercase;
+	letter-spacing:2.4px;
+
+	/*mobile
+	font-size:24px;
+	line-height:31px;*/
+}
+
+/*SECTION SUBHEADERS*/
+h3 {
+	font-family:"Trueno",sans-serif !important;
+  font-weight:600;
+	font-size:19px;
+	line-height:29px;
+	padding-bottom:5px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+/*HEADER*/
+
+/*STAFF PORTAL BANNER*/
+#boxes-box-site_info h1 a {
+    font-family: "Trueno",sans-serif !important;
+    font-weight:600;
+    padding-left: 100px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.52px;
+    line-height: 1;
+    padding-left:25px;
+}
+#boxes-box-site_info h1 {
+    line-height:1;
+}
+
+/*removing padding, margins, display:none and such*/
+.header-left.header-main.header-right .region-header-second .region-inner {
+	margin-left: 0;
+}
+.media-embed-auto-scaler {
+	padding:0 !important;
+}
+.breadcrumb {
+	display:none;
+	/*will appear on department pages, use different style sheet*/
+}
+
+div#branding_header {
+	display: none;
+}
+#header {
+	background-image: linear-gradient(45deg, #F8C21C 0%, #FBE08E 100%);
+	max-height: 61px;
+}
+#header-container {
+	width: 100%;
+}
+
+#header-container .block-boxes-os_boxes_site_info, .region.region-header-third {
+	min-height: 61px;
+}
+#header-container .block-boxes-os_boxes_site_info {
+	height: 61px;
+}
+
+.region.region-header-third {
+	background: #1e1e1e;
+	width: 320px;
+	text-align: center;
+	margin-left: -320px;
+}
+.region-header-third .region-inner {
+	padding: 0;
+}
+.hl_header-logo {
+	padding: 15px 0;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*NAVIGATION MENU*/
+#menu-bar {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+#menu-bar, #menu-bar ul.nice-menu a:hover, #menu-bar ul.nice-menu a:focus, #menu-bar ul.nice-menu a:active, #menu-bar ul.nice-menu ul {
+	background: #1e1e1e;
+}
+
+#menu-bar ul.nice-menu a, #menu-bar ul.nice-menu .menuparent ul li a, #menu-bar ul.nice-menu .menuparent ul li a.active {
+	font-family: "Trueno", sans-serif !important;
+	font-size: 18px;
+	color: #FFFFFF !important;
+	letter-spacing: 0;
+	padding: 0;
+	border-bottom:3px solid transparent;
+}
+
+/*HACK FOR CENTERING NAV*/
+nav {
+	padding: 20px 0;
+	max-width: 616px;
+}
+
+#menu-bar ul.nice-menu li {
+	padding: 5px 30px;
+}
+#menu-bar ul.nice-menu a:hover, #menu-bar ul.nice-menu a:focus, #menu-bar ul.nice-menu a.active {
+	background: #1e1e1e;
+	border-bottom:3px solid #ffffff;
+}
+
+/*SUBNAV MENU FOR ABOUT SECTION - NEEDS MORE WORK AND STYLING*/
+#menu-bar ul.nice-menu .menuparent.over > a, #menu-bar ul.nice-menu .menuparent a:hover, #menu-bar ul.nice-menu .menuparent a.active, #menu-bar ul.nice-menu a.active, #menu-bar ul.nice-menu a:hover, #menu-bar {background:#1e1e1e;}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+/*LINKS*/
+
+/*BLUE LINK TAG*/
+#block-os-pages-main-content .field-item:first-of-type a, .hl_contribute a, .hl_see-all a, a.more-link, a.node-readmore {
+	font-family:"Lora",Georgia,serif !important;
+	text-decoration:none !important;
+	border-bottom:3px solid transparent;
+	color: #0579b8;
+    -webkit-transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+    transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+}
+#block-os-pages-main-content .field-item:first-of-type a:hover, .hl_contribute a:hover, .hl_see-all a:hover, a.more-link:hover, a.node-readmore:hover {
+	border-bottom-color: rgba(5,121,184,0.3);
+}
+/*LINK TAG WITH ARROW i.e. SEE ALL*/
+.hl_see-all {
+	text-align:right;
+}
+.hl_see-all a, a.more-link, a.node-readmore {
+	text-transform:uppercase;
+	font-family:"Trueno",sans-serif !important;
+	font-size:14px;
+	letter-spacing:2px;
+  clear:both;
+  margin-top:30px;
+}
+.hl_see-all a::after, a.more-link::after, a.node-readmore::after {
+    border-bottom: 0.425em solid transparent;
+    border-left: 0.5em solid currentColor;
+    border-top: 0.425em solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    line-height: 0;
+    margin-left: 0.3em;
+    opacity: 0.6;
+    width: 0;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*SMALL WHITE BUTTON*/
+.hl_department-blurb a, .hl_suggest-link a {
+	font-family: "Trueno",sans-serif !important;
+  letter-spacing: 1.17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 9px;
+  text-align:center;
+  text-decoration:none !important;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+  color: #1E1E1E;
+  font-size:12px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  text-decoration: none;
+  font-weight: 700;
+}
+.hl_department-blurb a:hover {
+	background-color: #6c6c6c;
+    border-color: #6c6c6c;
+    color: white;
+}
+
+/*SMALL BLUE BUTTON*/
+.hl_suggest-link a {
+	background: #0579B8;
+    color: #ffffff;
+    border: none;
+    margin:9px 0;
+    margin-top:89px;
+}
+.hl_suggest-link a:hover {
+	background:#2a5280;
+	border:none;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*DIVIDER*/
+.hl_divider .block-inner::before {
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(40%,#6c6c6c),color-stop(20%,rgba(255,255,255,0))),-webkit-gradient(linear,left top,right top,color-stop(40%,#6c6c6c),color-stop(20%,rgba(255,255,255,0)));
+    background-image: linear-gradient(90deg,#6c6c6c 40%,rgba(255,255,255,0) 20%),linear-gradient(90deg,#6c6c6c 40%,rgba(255,255,255,0) 20%);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 4px 1px;
+    border: none;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+/*REMOVE DIVIDER FROM INDIVIDUAL COLUMNS*/
+.hl_quicklinks .block-inner::before, .hl_posts .block-inner::before, .hl_department-blurb .block-inner::before {
+	display:none;
+}
+/*margins around divider*/
+.hl_see-all, a.more-link {
+	margin-bottom:80px !important;
+}
+.hl_home-ft-depts, .hl_divider h2 {
+	margin-top:80px !important;
+}
+h2.field-label {
+       margin-top:0 !important;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*BULLETS*/
+.hl_quicklinks a {
+	color: #1e1e1e !important;
+    text-decoration: none !important;
+    font-family: "Trueno",sans-serif !important;
+    font-size: 14px;
+}
+.hl_quicklinks a:hover {
+	color:#6c6c6c !important;
+}
+.hl_quicklinks li {
+	list-style:none;
+}
+.hl_quicklinks li::before {
+	color: #0579B8;
+    content: '\2022';
+    display: inline-block;
+    font-size: 3em;
+    max-height: 0;
+    max-width: 0;
+    position: relative;
+    left: -20px;
+    top: 6px;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*LIST OF POSTS*/
+/*REMOVE TITLE FROM LIST OF POSTS WIDGET ON HOMEPAGE*/
+.hl_posts h2 {
+	display:none
+}
+/*creating columns*/
+.hl_posts article {
+	width:30%;
+	float:left;
+}
+/*adding horizontal lines to middle column posts*/
+.hl_posts article:nth-of-type(2) {
+	margin:0 1.75%;
+	padding:0 1.75%;
+	border-left:1px solid #C0C0C0;
+	border-right:1px solid #C0C0C0;
+}
+
+.hl_posts h1.node-title {
+    line-height:32px;
+    padding-bottom:5px;
+}
+.hl_posts h1.node-title a {
+	color: #1e1e1e;
+  font-family: "Trueno",sans-serif !important;
+  font-size: 26px;
+  text-transform: none;
+  line-height:32px
+}
+.node .submitted {
+	font-size: 15px;
+    font-weight: 200;
+    line-height: 1.47;
+    margin-bottom: 15px;
+}
+.hl_posts p, .hl_posts i, .hl_posts em {
+	font-size:16px;
+}
+.event-start .event-start {
+	background-color:#F8C21C;
+	border:none;
+	border-radius:4px;
+}
+.event-start .event-start span {
+	font-family: "Trueno",sans-serif !important;
+  font-weight:700;
+  font-size: 14px;
+  color: #1e1e1e;
+}
+.event-content h2 {
+	font-weight:normal !important;
+  text-transform:none;
+}
+.date-display-single {
+	color:#1e1e1e;
+}
+
+/*REMOVE SUMMARY FROM STAFF EVENT POSTS*/
+.hl_event-list .field-type-text-with-summary {
+	display:none;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*FOOTER*/
+
+/*FOOTER*/
+#footer .gpanel {
+	width:100%;
+}
+#footer .region-inner.clearfix {
+	padding-top:0;
+}
+.hl_footer {
+	padding:60px 0;
+}
+
+#branding_footer, #powerby-login, .region-footer-bottom .region-inner {
+	display:none;
+}
+#footer {
+	background: black;
+	padding:0;
+	margin-top:60px;
+}
+/*adjust column widths - gets broken apart into two*/
+.hl_footer .panel-row.row-1.clearfix {
+	width:40%;
+}
+.hl_footer .panel-row.row-2.clearfix{
+	width:60%;
+}
+
+/*footer links*/
+#footer a {
+	font-family: "Trueno",sans-serif !important;
+  font-weight:200;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.93;
+  letter-spacing: 1.9px;
+  -webkit-transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+  transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+}
+
+#footer ul.hl__footer-nav__items {
+	text-transform:uppercase;
+}
+#footer ul.hl__footer-nav__items li {
+	padding:5px 0;
+}
+#footer ul.hl__footer-nav__items li:first-of-type {
+	padding-top:0;
+}
+#footer a:hover {
+    border-bottom: 3px solid rgba(255,255,255,0.3)
+}
+
+#footer a.hl_footer-logo:hover {
+	border-bottom:none;
+}
+.hl__footer__social .hl__icon-list__link {
+	width:36px;
+	height:36px;
+}
+li.hl__icon-list__item, li.hl__linked-list__item {
+	margin-right:25px;
+	float:left;
+	padding:10px 0;
+}
+li.hl__icon-list__item li:last-of-type {
+	border-right: 1px solid silver;
+	padding-right: 25px;
+}
+
+.hl__footer__message {
+	clear:both;
+}
+
+.hl__footer__message p {
+	font-family:"Lora", Georgia, serif !important;
+	color: silver;
+}
+#boxes-box-1536267932 .region-four-fourth .region-inner {
+	padding-top:0;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*HOMEPAGE*/
+
+/*HOMEPAGE HERO IMAGE*/
+.hl_title {
+	background-image: url(https://staff.library.harvard.edu/files/launch/files/staff_portal_hero_image.jpeg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 380px;
+    padding:100px 0 120px 0;
+}
+.hl_title p {
+	display: none;
+}
+/*IF USE THE TEXT FOR TITLE 'WELCOME TO THE LIBRARY STAFF PORTAL'*/
+.hl_title p {
+	font-family:"Lora",Georgia,serif !important;
+	font-style:italic;
+	font-size:48px;
+	color:#1e1e1e;
+	line-height:54px;
+}
+
+/*h1,*/ .hl_title span {
+	font-family:"Trueno",sans-serif !important;
+  font-weight:700;
+	font-style:normal;
+	font-size:60px;
+	line-height:74px;
+	color:#1e1e1e;
+	text-transform:uppercase;
+
+	/*mobile*/
+	/*font-size:32px;
+	line-height:40px;*/
+}
+
+/*SUGGEST LINK HEADING LINE STYLE*/
+.hl_suggest-link h2 {
+	float:left;
+	padding-right:30px;
+}
+
+/*CONTRIBUTE*/
+.hl_contribute {
+	background: #ffffff url(https://library.harvard.edu/themes/custom/harvard/assets/images/dots.png) top center repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.hl_contribute .boxes-box {
+	padding:60px;
+}
+.hl_contribute p {
+	text-align:left;
+	font-weight:700;
+	font-size:28px;
+	line-height:41px;
+}
+
+/*CC SIGNUP*/
+#block-boxes-os-box-mailchimp {
+	background-image: linear-gradient(45deg, #2A5280 0%, #0579B8 100%);
+	height:115px;
+}
+#boxes-box-os_box_mailchimp .boxes-box-content {
+	text-align:center;
+	padding:35px;
+}
+#footer #block-boxes-os-box-mailchimp a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Trueno",sans-serif !important;
+  font-size: 20px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*RESPONSIVE & MOBILE*/
+
+/*header*/
+@media (max-width:1008px) {
+	#header-container .block-boxes-os_boxes_site_info {
+		padding-bottom: 0;
+	}
+	.at-panel.gpanel.panel-display.three-col.clearfix {
+		padding-right: 0;
+	}
+	#boxes-box-site_info {
+		padding:15px 0;
+	}
+	#menu-bar #block-os-primary-menu a:hover, #menu-bar #block-os-primary-menu a:focus, #menu-bar #block-os-primary-menu li:hover, #menu-bar #block-os-primary-menu li:focus {
+		background:#f2f2f2 !important;
+	}
+	.mobile-buttons {
+		background:#fff;
+	}
+	.link-count-mobi-main.first /*.link-count-mobi-search.last*/ {
+		padding:11px;
+	}
+	#menu-bar ul.nice-menu li {
+		padding:5px;
+	}
+	#menu-bar #block-os-primary-menu.opened {
+		margin-top:22px;
+	}
+	.hl_header-logo a {
+		margin-left:14px;
+	}
+	.hl_title {
+		min-height:300px;
+	}
+
+}
+@media (max-width:845px) {
+	.hl_suggest-link h2 {
+		float:none;
+	}
+	.hl_suggest-link a {
+		margin-top:9px;
+	}
+}
+@media (max-width:768px) {
+	/*full width posts*/
+	.hl_posts article {
+		width:100%;
+	}
+	/*removing horizontal lines from middle column posts*/
+	.hl_posts article:nth-of-type(2) {
+		margin:0;
+		padding:0;
+		border:0;
+	}
+	.hl_title {
+		min-height:150px;
+	}
+}
+@media (max-width:480px) {
+	.link-count-mobi-main.first /*.link-count-mobi-search.last*/ {
+		padding:11px;
+	}
+	#menu-bar #block-os-primary-menu.opened {
+		margin-top:22px;
+	}
+	.hl_title {
+		min-height:100%;
+	}
+}
+@media (max-width: 479px) {
+	.region-header-second .region-inner {
+		padding-top:0 !important;
+	}
+	#boxes-box-site_info h1 {
+		padding-top:15px;
+	}
+	#boxes-box-site_info h1 a {
+		padding-left:0;
+	}
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+
+</style>
