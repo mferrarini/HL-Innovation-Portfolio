@@ -2,7 +2,6 @@
 
 
 <style>
-/* <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/> */
 /* FONT SMOOTHING */
 html {
   -moz-osx-font-smoothing: grayscale;
@@ -157,7 +156,7 @@ div#branding_header {
 
 /*GENERAL TYPOGRAPHY*/
 body * {
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
 	color:#1e1e1e;
 	font-style:normal;
 }
@@ -174,8 +173,7 @@ p {
 
 /*PAGE TITLES*/
 h1#page-title {
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
   font-weight:700;
 	font-size:64px;
 	line-height:74px;
@@ -189,8 +187,7 @@ h1#page-title {
 /*SECTION HEADERS*/
 .boxes-box-content h2, h2.block-title,
 .hl__story__summary h3 {
-  /* font-family:"TruenoBold",sans-serif !important; */
-  font-family:"TruenoRegular",sans-serif !important;
+  font-family:"Trueno",sans-serif !important;
   font-weight:700;
 	font-size:32px;
 	line-height:42px;
@@ -204,7 +201,8 @@ h1#page-title {
 
 /*SECTION SUBHEADERS*/
 h3 {
-	/* font-family:"TruenoSemiBold",sans-serif !important;
+	/* font-family:"Trueno",sans-serif !important;
+  font-weight:600;
 	font-size:19px;
 	line-height:29px;
 	padding-bottom:5px; */
@@ -216,9 +214,8 @@ h3 {
 /* blue link */
 a {
 	color: #0579B8;
-	/* font-family:"TruenoSemiBold",sans-serif !important; */
-  font-family:"TruenoRegular",sans-serif !important;
-	font-weight:700;
+  font-family:"Trueno",sans-serif !important;
+	font-weight:600;
 	text-decoration:none !important;
 	border-bottom: 3px solid transparent;
 	transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
@@ -381,8 +378,7 @@ ul.pager.mini-pager {
 	text-transform:uppercase;
 	letter-spacing:2px;
 	color: #6c6c6c;
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font: 700 14px/17px "TruenoRegular", sans-serif !important;
+	font: 700 14px/17px "Trueno", sans-serif !important;
 	padding-top:5px;
 	padding-bottom:20px;
 }
@@ -396,7 +392,7 @@ ul.pager.mini-pager {
 .hl__story__thumbnail p {
 	font-size:13px;
 	line-height:24px;
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
 	color:#6C6C6C;
 }
 
@@ -436,8 +432,7 @@ ul.pager.mini-pager {
 
 /*---- SUMMARY ----*/
 .hl__story__summary h2 {
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
   font-weight:700;
 	font-size:60px;
 	line-height:64px;
@@ -486,7 +481,7 @@ ul.pager.mini-pager {
 }
 
 .hl__story__people p {
-  font-family: "TruenoRegular",sans-serif !important;
+  font-family: "Trueno",sans-serif !important;
   line-height: 23px;
   letter-spacing: .77px;
 }
@@ -504,6 +499,7 @@ ul.pager.mini-pager {
 .hl__story__person img {
   /* clip-path: circle(); */
   border-radius:50%;
+  max-height:180px;
 }
 
 .hl__story__person p:first-of-type {
@@ -553,8 +549,7 @@ ul.pager.mini-pager {
 } */
 
 .hl__hero h2 {
-	/* font: 60px/72px "TruenoBold", sans-serif; */
-  font: 700 60px/72px "TruenoRegular", sans-serif;
+  font: 700 60px/72px "Trueno", sans-serif;
 	color:#ffffff;
 	text-align:center;
 	padding-top:109px;
@@ -659,8 +654,7 @@ body.html .hl__featured-stories img {
 }
 
 .hl__story-item h3 {
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
   font-weight:700;
   color: #ffffff;
   font-size: 28px;
@@ -691,8 +685,7 @@ body.html .hl__featured-stories img {
 
 .hl__story-item a {
   color: #ffffff;
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
   font-weight:700;
   font-size: 18px;
   line-height: 21px;
@@ -869,11 +862,9 @@ img.media-element.file-default {
 
 
 .hl__featured-story__content h3 {
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
   font-weight:700;
   color: #ffffff;
-  /* font-weight: 700; */
   font-size: 28px;
   line-height: 38px;
   padding: 25px;
@@ -899,8 +890,7 @@ img.media-element.file-default {
 
 .hl__featured-story__content a {
   color: #ffffff;
-  /* font-family:"TruenoBold",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
+	font-family:"Trueno",sans-serif !important;
   font-weight:700;
   font-size: 18px;
   line-height: 21px;
@@ -1045,22 +1035,23 @@ img.media-element.file-default {
   padding-right:50px;
 }
 
-.hl__story-index__cards a {
-  /* font: 26px/32px "TruenoBold", sans-serif; */
-  font:700 26px/32px "TruenoRegular", sans-serif;
+.hl__story-index__cards a, .search-results a {
+  font:700 26px/32px "Trueno", sans-serif;
   color: #1e1e1e;
 }
-.hl__story-index__cards a:hover, .hl__story-index__cards a:focus {
+.hl__story-index__cards a:hover, .hl__story-index__cards a:focus,
+.search-results a:hover, .search-results a:focus {
 	border-color:rgba(30,30,30,0.8);
 }
 
-.hl__story-index__cards article {
+.hl__story-index__cards article, .search-results article {
   padding: 30px 0px;
 	margin-bottom:0;
 	max-width:930px;
 	border-bottom:1px dotted #c0c0c0;
 }
-.hl__story-index__cards article:hover, .hl__story-index__cards article:focus {
+.hl__story-index__cards article:hover, .hl__story-index__cards article:focus,
+.search-results article:hover, .search-results article:focus {
 	cursor:pointer;
   background-color: white;
 	margin:0 -20px;
@@ -1103,8 +1094,8 @@ img.media-element.file-default {
 	text-align: center;
 }
 .hl__quick-facts span {
-  /* font: 112px/135px "TruenoBold", sans-serif !important; */
-  font:700 112px/135px "TruenoRegular", sans-serif !important;
+  /* font:700 112px/135px "Trueno", sans-serif !important; */
+  font:700 100px/125px "Trueno", sans-serif !important;
 }
 
 /* remove bullets */
@@ -1137,7 +1128,6 @@ img.media-element.file-default {
   z-index: 1;
   background: rgba(255,255,255,0.85);
   padding: 45px 100px 45px 0;
-  /* margin-bottom: 0; */
   margin-top: 60px;
 }
 .hl__pull-quote--1 .media.media-element-container.media-default {
@@ -1158,7 +1148,6 @@ img.media-element.file-default {
 #footer {
 	background:#1e1e1e;
 	padding:0;
-	/* margin-top:60px; */
 }
 #footer .block-inner {
 	margin:0;
@@ -1190,9 +1179,8 @@ img.media-element.file-default {
 }
 
 #footer p, #footer a {
-  /* font-family:"TruenoLight",sans-serif !important; */
-	font-family:"TruenoRegular",sans-serif !important;
-  font-weight:300;
+	font-family:"Trueno",sans-serif !important;
+  font-weight:200;
 	text-transform:uppercase;
 }
 #footer .hl__footer__location p {
@@ -1296,102 +1284,6 @@ img.media-element.file-default {
 	border-color: transparent;
 }
 
-/*-------------------------------- RESPONSIVE & MOBILE --------------------------------*/
-/*---- LARGE ----*/
-@media (max-width:970px){
-
-}
-/*---- MEDIUM ----*/
-@media (max-width:780px){
-
-}
-/*---- SMALL ----*/
-@media (max-width:620px){
-
-}
-/*---- X-SMALL ----*/
-@media (max-width:480px){
-
-}
-
-
-
-/*---- FEATURES STORIES ----*/
-/* @media (max-width:100em){
-	.hl__story-item__content {
-		width:65%;
-	}
-} */
-
-/* @media (max-width:68.75em){
-	.hl__featured-stories__wrapper {
-		padding:0 1em;
-	}
-} */
-
-/* @media (max-width:65.625em){
-	.hl__featured-stories {
-		padding-top:0;
-	}
-
-	.hl__featured-stories__columns {
-		flex-direction:column;
-	}
-
-	.hl__story-item {
-		flex-direction:row;
-		align-items:center;
-		flex:1 1 100%;
-	}
-
-	body.html .hl__featured-stories img {
-		width:60%;
-		border:4px solid #ffffff;
-	}
-
-	.hl__story-item__content {
-		margin:0 0 0 -3em;
-	}
-
-	.hl__story-item--middle {
-		top:0;
-		flex-direction:row-reverse;
-		margin:0;
-	}
-
-	.hl__story-item--middle .hl__story-item__content {
-		margin:0 -3em 0 0;
-	}
-
-	.hl__story-item--last {
-		align-items:center;
-	}
-
-} */
-
-/* @media (max-width:37.5em){
-	.hl__story-item {
-		flex-direction:column;
-		margin-bottom:1em;
-	}
-
-	body.html .hl__featured-stories img {
-		width:100%;
-		border:none;
-		height:200px;
-	}
-
-	.hl__story-item__content {
-		max-width:none;
-		margin:0;
-		width:100%;
-	}
-
-	.hl__story-item--middle {
-		flex-direction:column;
-		margin-bottom:1em;
-	}
-} */
 
 /* Quick fixes for photo layouts */
 
