@@ -650,14 +650,14 @@ a.hl__right-arrow::after, a.more-link::after, a.node-readmore::after {
 }
 
 /* dark wash */
-.hl__content-block--image-dark {
+/* .hl__content-block--image-dark {
 	background:linear-gradient(rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
-}
+} */
 
 /* light wash */
-.hl__content-block--image-light {
+/* .hl__content-block--image-light {
 	background:linear-gradient(rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.9)), url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/urc-checkindesk.jpg) center center/cover no-repeat;
-}
+} */
 
 /* dotted background */
 .hl__content-block--dots {
@@ -1099,6 +1099,14 @@ a.hl__right-arrow::after, a.more-link::after, a.node-readmore::after {
 	#boxes-box-site_info h1 a {
 		padding-left:0;
 	}*/
+}
+
+/* code snippets */
+pre code {
+	background:#f2f2f2;
+	border:1px solid #1e1e1e;
+	display:block;
+	padding:20px;
 }
 
 

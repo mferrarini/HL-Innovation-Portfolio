@@ -151,7 +151,7 @@ h1#page-title {
 
 /* CONTAINER */
 #content-column #content > * {
-  max-width: 1450px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
