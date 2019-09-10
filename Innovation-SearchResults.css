@@ -111,5 +111,14 @@ searchResult.click(function(){
 }
 
 
+/* MOBILE/RESPONSIVE */
+@media(max-width:768px){
+  #main-content-header, #content-column #content > * {
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+
 
 </style>
