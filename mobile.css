@@ -124,6 +124,17 @@
 }
 /*---- X-SMALL ----*/
 @media (max-width:480px){
+  /* header */
+  #boxes-box-site_info {
+    margin-left: 20px;
+  }
+  #boxes-box-site_info h1 a {
+    padding-left:0;
+  }
+  .hl__header-logo .block-inner {
+    padding-left:20px;
+  }
+
   /* featured stories grid */
   .hl__featured-stories .three-3x33 {
     display: block;
