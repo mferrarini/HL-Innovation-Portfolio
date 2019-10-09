@@ -220,6 +220,9 @@ a {
 	border-bottom: 3px solid transparent;
 	transition: border 0.28s cubic-bezier(0.28,1.08,1,0.96);
 }
+a:visited {
+	color: #0579B8;
+}
 a:hover, a:focus {
 	border-color: rgba(5,121,184,0.3);
 }
@@ -316,7 +319,7 @@ ul.pager.mini-pager {
 
 /* dotted background */
 .hl__content-block--dots {
-	background:#FFFFFF url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/dots.png) top center repeat;
+	background:#FFFFFF url(https://innovation.library.harvard.edu/files/dsi/files/dots.png) top center repeat;
 }
 #content-column .hl__content-block--dots .block-inner {
   padding:60px;
@@ -335,7 +338,8 @@ ul.pager.mini-pager {
 
 /* custom backgrounds go here */
 .hl__content-block--apply {
-	background:linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.5)), url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/open-book-story.jpg) no-repeat center center;
+	background:linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.5)), url(https://innovation.library.harvard.edu/files/dsi/files/
+open-book-story.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -359,17 +363,19 @@ ul.pager.mini-pager {
 /* 2. add class "hl__full-width hl__cta hl__cta--UNIQUE-NAME" */
 /* 3. in css code, .hl__cta--UNIQUE-NAME {
 	background: #COLOR;
-	background-image: url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/UNIQUE-NAME);
+	background-image: url(https://innovation.library.harvard.edu/files/dsi/files/
+UNIQUE-NAME);
 } */
 .hl__cta--dots {
 	/* upload file for innovation portfolio dots */
-	background:#ffffff url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/dots.png) top center repeat;
+	background:#ffffff url(https://innovation.library.harvard.edu/files/dsi/files/
+dots.png) top center repeat;
 	padding:60px;
 }
 
 /* custom backgrounds */
 .hl__cta--apply {
-	background:linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.5)), url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/open-book-story.jpg) no-repeat center center;
+	background:linear-gradient(rgba(30,30,30,0.5), rgba(30,30,30,0.5)), url(https://innovation.library.harvard.edu/files/dsi/files/open-book-story.jpg) center center;
 	background-size: cover;
 }
 
@@ -676,7 +682,8 @@ body.html .hl__featured-stories img {
 	bottom:2em;
 	width:270px;
 	padding:25px;
-	background:url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/dots.png) top center repeat;
+	background:url(https://innovation.library.harvard.edu/files/dsi/files/
+dots.png) top center repeat;
 }
 
 .hl__story-item--middle .hl__story-item__link {
@@ -967,6 +974,8 @@ img.media-element.file-default {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom:30px;
+  /* padding-left:50px;
+  padding-right:50px; */
 }
 #columns #block-boxes-solr-search-box .block-inner {
   padding-left: 50px;
@@ -992,7 +1001,8 @@ img.media-element.file-default {
  height: 45px;
  width: 50px;
  margin: 0 0 0 -50px !important;
- background: url(https://beta.projects.iq.harvard.edu/files/harvardlibraryux/files/search-icon.png) no-repeat center center;
+ background: url(https://innovation.library.harvard.edu/files/dsi/files/searchicon.png) no-repeat center center;
+ background-size:45px auto;
 }
 
 
@@ -1116,7 +1126,8 @@ img.media-element.file-default {
 
 /* custom backgrounds */
 .hl__quick-facts__custom-bg {
-	background:linear-gradient(rgba(42,70,92,0.80), rgba(42,70,92,0.80)), url(https://beta.projects.iq.harvard.edu/files/dsi-test/files/bone-pile.jpg);
+	background:linear-gradient(rgba(42,70,92,0.80), rgba(42,70,92,0.80)), url(https://innovation.library.harvard.edu/files/dsi/files/
+bone-pile.jpg);
 }
 
 
@@ -1126,6 +1137,7 @@ img.media-element.file-default {
   z-index: 1;
   background: rgba(255,255,255,0.85);
   padding: 45px 100px 45px 0;
+  /* margin-bottom: 0; */
   margin-top: 60px;
 }
 .hl__pull-quote--1 .media.media-element-container.media-default {
@@ -1146,6 +1158,7 @@ img.media-element.file-default {
 #footer {
 	background:#1e1e1e;
 	padding:0;
+	/* margin-top:60px; */
 }
 #footer .block-inner {
 	margin:0;
@@ -1282,11 +1295,115 @@ img.media-element.file-default {
 	border-color: transparent;
 }
 
+.at-panel.footer .region.region-footer-bottom {
+  display: none !important;
+}
+
+/*-------------------------------- RESPONSIVE & MOBILE --------------------------------*/
+/*---- LARGE ----*/
+@media (max-width:970px){
+
+}
+/*---- MEDIUM ----*/
+@media (max-width:780px){
+
+}
+/*---- SMALL ----*/
+@media (max-width:620px){
+
+}
+/*---- X-SMALL ----*/
+@media (max-width:480px){
+
+}
+
+
+
+/*---- FEATURES STORIES ----*/
+/* @media (max-width:100em){
+	.hl__story-item__content {
+		width:65%;
+	}
+} */
+
+/* @media (max-width:68.75em){
+	.hl__featured-stories__wrapper {
+		padding:0 1em;
+	}
+} */
+
+/* @media (max-width:65.625em){
+	.hl__featured-stories {
+		padding-top:0;
+	}
+
+	.hl__featured-stories__columns {
+		flex-direction:column;
+	}
+
+	.hl__story-item {
+		flex-direction:row;
+		align-items:center;
+		flex:1 1 100%;
+	}
+
+	body.html .hl__featured-stories img {
+		width:60%;
+		border:4px solid #ffffff;
+	}
+
+	.hl__story-item__content {
+		margin:0 0 0 -3em;
+	}
+
+	.hl__story-item--middle {
+		top:0;
+		flex-direction:row-reverse;
+		margin:0;
+	}
+
+	.hl__story-item--middle .hl__story-item__content {
+		margin:0 -3em 0 0;
+	}
+
+	.hl__story-item--last {
+		align-items:center;
+	}
+
+} */
+
+/* @media (max-width:37.5em){
+	.hl__story-item {
+		flex-direction:column;
+		margin-bottom:1em;
+	}
+
+	body.html .hl__featured-stories img {
+		width:100%;
+		border:none;
+		height:200px;
+	}
+
+	.hl__story-item__content {
+		max-width:none;
+		margin:0;
+		width:100%;
+	}
+
+	.hl__story-item--middle {
+		flex-direction:column;
+		margin-bottom:1em;
+	}
+} */
 
 /* Quick fixes for photo layouts */
 
 div#boxes-box-1566422055 {
     float: right !important;
+}
+
+div#block-boxes-1568202190 {
+    margin-left: 105px;
 }
 
 .region.region-two-33-66-second {
@@ -1300,6 +1417,14 @@ div#boxes-box-1566422055 {
 /* prevents Story page (with search box) from appearing in list of posts */
 article#node-1457426 {
   display:none;
+}
+
+/* two column layout for name lists */
+
+#boxes-box-1568132566 ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 
 </style>

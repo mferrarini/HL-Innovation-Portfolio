@@ -1,23 +1,23 @@
 <link rel="shortcut icon" href="https://libapps.s3.amazonaws.com/accounts/65995/images/HL-logo_favicon.png" type="image/vnd.microsoft.icon">
 <script>document.title = "Ask a Librarian | Harvard Library"</script>
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/> -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-<script src="https://api2.libanswers.com/1.0/widgets/8684"></script>
+<script src="https://api2.libanswers.com/1.0/widgets/8323"></script>
+<script src="https://v2.libanswers.com/load_chat.php?hash=e51326de242dae8568d89faec0d175ef"></script>
 <script>
 $(document).ready(function() {
 	if ($(window).width() < 430) {
-        $("#s-la-content-search-query-19074").attr('placeholder', 'Try "HOLLIS"');
+        $("#s-la-content-search-query-7255").attr('placeholder', 'Try "Zotero"');
     }
     else {
-        $("#s-la-content-search-query-19074").attr('placeholder', 'Try "printer help" or "HOLLIS"');
+        $("#s-la-content-search-query-7255").attr('placeholder', 'Try "printer help" or "Zotero"');
     }
     $(window).resize(function () {
         if ($(window).width() < 430) {
-            $("#s-la-content-search-query-19074").attr('placeholder', 'Try "HOLLIS"');
+            $("#s-la-content-search-query-7255").attr('placeholder', 'Try "Zotero"');
             }
         else {
-            $("#s-la-content-search-query-19074").attr('placeholder', 'Try "printer help" or "HOLLIS"');
+            $("#s-la-content-search-query-7255").attr('placeholder', 'Try "printer help" or "Zotero"');
         }
     });
 });
@@ -108,7 +108,6 @@ $(document).ready(function() {
     font-weight: 800;
     font-style: italic
 }
-
 /*FONT SMOOTHING*/
 html {
    -moz-osx-font-smoothing: grayscale;
@@ -122,11 +121,10 @@ body, a.hl_header-ask_title {
 
 h1 {
 	font-family:'Trueno','Montserrat',sans-serif !important;
-	font-weight:700;
 	color:#1E1E1E !important;
 	font-size:60px !important;
+	font-weight: 700;
 	line-height:74px !important;
-	padding-top:30px;
 }
 
 .s-la-public-home.s-la-public-header-text {
@@ -135,9 +133,9 @@ h1 {
 
 .s-la-box-title h2, .s-la-widget .color_head {
 	font-family:'Trueno','Montserrat',sans-serif !important;
-	font-weight:700;
 	color:#1E1E1E !important;
 	font-size:32px !important;
+	font-weight: 700;
 	line-height:42px !important;
 	text-transform:uppercase !important;
 	letter-spacing:2.4px !important;
@@ -145,9 +143,9 @@ h1 {
 
 h3, #libchat_modal_title {
 	font-family:'Trueno','Montserrat',sans-serif;
-	font-weight:700;
 	color:#1E1E1E;
 	font-size:20px !important;
+	font-weight: 700;
 	line-height:30px !important;
 	text-transform:uppercase;
 	letter-spacing:1.5px;
@@ -155,9 +153,9 @@ h3, #libchat_modal_title {
 
 h4 {
 	font-family:'Trueno','Montserrat',sans-serif;
-	font-weight:600;
 	color:#1E1E1E;
 	font-size:20px;
+	font-weight: 500;
 	line-height:30px;
 	text-transform:uppercase;
 	letter-spacing:2.14px;
@@ -165,17 +163,17 @@ h4 {
 
 h5 {
 	font-family:'Trueno','Montserrat',sans-serif;
-	font-weight:600;
 	color:#1E1E1E;
 	font-size:19px;
+	font-weight: 500;
 	line-height:29px;
 }
 
 h6 {
 	font-family:'Trueno','Montserrat',sans-serif;
-	font-weight:600;
 	color:#1E1E1E;
 	font-size:16px;
+	font-weight: 500;
 	line-height:28px;
 }
 
@@ -206,6 +204,7 @@ a, .s-la-widget a {
 }
 #s-la-page-maincontent a, .s-la-widget a {
 	font-size:19px;
+	border-bottom: 3px solid transparent;
 	color:#0579b8;
 	font-weight:700;
 	transition:border 0.28s cubic-bezier(0.28,1.08,1,0.96);
@@ -219,9 +218,8 @@ a, .s-la-widget a {
 
 
 /*B&W BUTTON*/
-button, .btn, #libchat_e51326de242dae8568d89faec0d175ef button, .btn-primary, #s-la-content-text-58048 a.button, #s-la-content-text-58050 a.button {
-	font-family:"Trueno",'Montserrat',sans-serif !important;
-	font-weight:700;
+button, .btn, #libchat_e51326de242dae8568d89faec0d175ef button, .btn-primary, #s-la-content-text-55622 a.button, #s-la-content-text-55623 a.button {
+	font-family:'Trueno','Montserrat',sans-serif !important;
 	letter-spacing:1.17px !important;
 	text-transform:uppercase;
 	display: inline-block;
@@ -229,29 +227,30 @@ button, .btn, #libchat_e51326de242dae8568d89faec0d175ef button, .btn-primary, #s
     text-align:center;
     border: 1px solid #1e1e1e !important;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #1E1E1E;
     width: 100%;
     font-size:14px;
+	font-weight: 700;
     transition:all 0.4s ease;
     -webkit-transition:all 0.4s ease;
 }
 
-button:hover, .btn:hover, #libchat_e51326de242dae8568d89faec0d175ef button:hover, .btn-primary:hover, #s-la-content-text-58048 a.button:hover, #s-la-content-text-58050 a.button:hover,
-button:focus, .btn:focus, #libchat_e51326de242dae8568d89faec0d175ef button:focus, .btn-primary:focus, #s-la-content-text-58048 a.button:focus, #s-la-content-text-58050 a.button:focus {
+button:hover, .btn:hover, #libchat_e51326de242dae8568d89faec0d175ef button:hover, .btn-primary:hover, #s-la-content-text-55622 a.button:hover, #s-la-content-text-55623 a.button:hover,
+button:focus, .btn:focus, #libchat_e51326de242dae8568d89faec0d175ef button:focus, .btn-primary:focus, #s-la-content-text-55622 a.button:focus, #s-la-content-text-55623 a.button:focus {
 	background:#6c6c6c !important;
 	border-color:#6c6c6c !important;
 	color:#fff !important;
 }
 
 /*BLUE BUTTON - LIBCHAT + FORM WIDGETS*/
-#libchat_modal_10132 button, #autoload_btn button, #s-la-askform-submit-8684, .modal-footer button, #s-la-askform-submit-0 {
+#libchat_modal_10132 button, #autoload_btn button, #s-la-askform-submit-8323, .modal-footer button, #s-la-askform-submit-0 {
  	background:#0579b8;
  	border-color:transparent !important;
  	color:#fff;
  }
-#libchat_modal_10132 button:hover, #autoload_btn button:hover, #s-la-askform-submit-8684:hover, .modal-footer button:hover, #s-la-askform-submit-0:hover,
-#libchat_modal_10132 button:focus, #autoload_btn button:focus, #s-la-askform-submit-8684:focus, .modal-footer button:focus, #s-la-askform-submit-0:focus {
+#libchat_modal_10132 button:hover, #autoload_btn button:hover, #s-la-askform-submit-8323:hover, .modal-footer button:hover, #s-la-askform-submit-0:hover,
+#libchat_modal_10132 button:focus, #autoload_btn button:focus, #s-la-askform-submit-8323:focus, .modal-footer button:focus, #s-la-askform-submit-0:focus {
  	background:#2a5280 !important;
  	border-color:transparent !important;
  	color:#fff;
@@ -270,16 +269,9 @@ button:focus, .btn:focus, #libchat_e51326de242dae8568d89faec0d175ef button:focus
 .hl_header, .container.hl_footer {
 	width:100%;
 }
-.ahtl_header-ask {
-	background:#ffffff;
-}
-.ahtl_header-ask img {
-	height:80px;
-	margin-left:-20px;
-}
 section.hl_header-ask {
 	display:flex;
-	background: #ffffff;
+	background: #1e1e1e;
 }
 .hl_header-ask_title, .hl_header-ask_title:hover, .hl_header-ask_title:focus {
 	font-size:24px;
@@ -293,16 +285,15 @@ section.hl_header-ask {
 	font-weight:400;
 	line-height:40px;
 	margin:0;
-	padding:20px 25px;
+	padding:10px 25px;
 	float:left;
-	background:rgb(41,51,82);
+	background:linear-gradient(-46deg,#0579b8 0%,#2a5280 100%);
 	text-decoration:none;
 }
 .hl_header-ask_title span.ask {
     font-size: 32px;
     line-height: 1.25;
-    font-family: "Trueno",'Montserrat',sans-serif;
-		font-weight:600;
+    font-family: 'Trueno','Montserrat',sans-serif !important;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -311,8 +302,8 @@ section.hl_header-ask {
     text-transform: uppercase;
 }
 .hl_header-ask_logo {
-	height:80px;
-	max-width:502px;
+	height:60px;
+	max-width:330px;
     background-color: #1e1e1e;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -325,8 +316,11 @@ section.hl_header-ask {
     flex: none;
     float:right;
 }
+.hl_linked-image a {
+	padding: 10px 25px;
+    display: block;
+    font-size: 0;
 }
-
 
 /*------------------------------------------------------------------------------*/
 
@@ -340,11 +334,11 @@ h1#s-la-public-header-title {
 }
 
 /*SEARCH BOX*/
-#s-la-content-search-19074 .form-group {
+#s-la-content-search-7255 .form-group {
 	border:1px solid #1e1e1e;
 	border-radius:3px;
 }
-#s-la-content-search-query-19074 {
+#s-la-content-search-query-7255 {
 	padding:5px 10px;
 	margin:0 2px 0 0;
 	height:38px;
@@ -354,7 +348,7 @@ h1#s-la-public-header-title {
 	border-radius: 3px;
 	border-color:transparent;
 }
-#s-la-content-search-query-19074:focus {
+#s-la-content-search-query-7255:focus {
 	border:1px solid #66afe9;
 }
 
@@ -391,7 +385,7 @@ button.s-la-searchform-button, .s-la-searchform-button:active, .s-la-searchform-
 }
 
 /*RIGHT FACING ARROW > */
-button.s-la-searchform-button:after, #s-la-content-link-58051 a:after {
+button.s-la-searchform-button:after, #s-la-content-link-55624 a:after {
 	border-bottom: 5px solid transparent;
     border-left: 7px solid #0579b8;
     border-top: 5px solid transparent;
@@ -401,9 +395,9 @@ button.s-la-searchform-button:after, #s-la-content-link-58051 a:after {
 }
 
 /*FONT OF AUTOCOMPLETE LIST*/
-ul#s-la-content-search-query-19074_list {
-	font-family:"Trueno",'Montserrat',sans-serif;
-	font-weight:200;
+ul#s-la-content-search-query-7255_list {
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-weight: 300;
 }
 
 /*KEEP SEARCH BOX OPEN*/
@@ -416,26 +410,26 @@ ul#s-la-content-search-query-19074_list {
 
 /*"SEARCH FAQS" TEXT BEFORE SEARCHBOX*/
 
-#s-la-searchform-19074:before {
+#s-la-searchform-7255:before {
     content: "Search FAQs";
     margin-right: 20px;
     flex: none;
     -webkit-box-flex: 0;
-    font-family: "Trueno",'Montserrat',sans-serif;
+    font-family: 'Trueno','Montserrat',sans-serif;
     font-size: 20px;
-    /* font-weight: 600; */
+    font-weight: 600;
     letter-spacing: 1.5px;
     line-height: 2.0;
     text-transform: uppercase;
     float: left;
 }
-#s-la-page-8413 #s-la-searchform-19074:before {
+#s-la-page-3241 #s-la-searchform-7255:before {
     content:"";
     margin-right:0;
 }
 /*HIDE "SEARCH FAQS" WHEN SCREEN GETS TOO SMALL - WORK ON FIXING LATER*/
 @media (max-width: 768px) {
-#s-la-searchform-19074:before {
+#s-la-searchform-7255:before {
 	content:"";
 }
 }
@@ -445,7 +439,7 @@ ul#s-la-content-search-query-19074_list {
 
 
 /*PADDING & ALIGNMENT*/
-#s-la-content-search-19074 .col-xs-9, #s-la-content-search-19074 .col-xs-3.s-la-searchform-buttoncol, .s-la-box-content, .navbar-collapse {
+#s-la-content-search-7255 .col-xs-9, #s-la-content-search-7255 .col-xs-3.s-la-searchform-buttoncol, .s-la-box-content, .navbar-collapse {
 	padding:0;
 }
 #s-la-page-title-bar .navbar-form, .s-la-color-bars {
@@ -458,47 +452,47 @@ ul#s-la-content-search-query-19074_list {
 
 /*SEARCH RESULTS BOX*/
 #s-la-box-55074-container {
-	margin-bottom:0px;
+	margin-bottom:0p;
 }
 .navbar {
 	padding-right:40px;
 }
 
 /*CHAT/SUBMIT COLUMNS*/
-#s-la-content-text-58048 .col-md-6:first-of-type, #s-la-content-text-58050 .col-md-6:first-of-type {
+#s-la-content-text-55622 .col-md-6:first-of-type, #s-la-content-text-55623 .col-md-6:first-of-type {
 	padding:0 25px 0 0;
 }
-#s-la-content-text-58048 .col-md-6:last-of-type, #s-la-content-text-58050 .col-md-6:last-of-type {
+#s-la-content-text-55622 .col-md-6:last-of-type, #s-la-content-text-55623 .col-md-6:last-of-type {
 	padding:0 0 0 25px;
 }
-#s-la-content-text-58048 .col-md-6 h3, #s-la-content-text-58050 .col-md-6 h3 {
+#s-la-content-text-55622 .col-md-6 h3, #s-la-content-text-55623 .col-md-6 h3 {
 	margin-top:0;
 }
 @media (max-width:991px) {
-	#s-la-content-text-58048 .col-md-6:first-of-type, #s-la-content-text-58050 .col-md-6:first-of-type,
-	#s-la-content-text-58048 .col-md-6:last-of-type, #s-la-content-text-58050 .col-md-6:last-of-type {
+	#s-la-content-text-55622 .col-md-6:first-of-type, #s-la-content-text-55623 .col-md-6:first-of-type,
+	#s-la-content-text-55622 .col-md-6:last-of-type, #s-la-content-text-55623 .col-md-6:last-of-type {
 		padding:0;
 	}
-	#s-la-content-text-58048 .col-md-6 h3, #s-la-content-text-58050 .col-md-6 h3 {
+	#s-la-content-text-55622 .col-md-6 h3, #s-la-content-text-55623 .col-md-6 h3 {
 		margin-top:30px;
 	}
 }
 
 
 /*SEE ALL FAQs*/
-#s-la-content-link-58051 {
+#s-la-content-link-55624 {
 	text-align:right;
 }
 
 /*WIDTH OF ANSWERS*/
-#s-srch-source-0 .row .col-md-9, #s-la-box-20342-container, #s-la-content-faqlist-58047, #s-la-content-link-58051  {
+#s-srch-source-0 .row .col-md-9, #s-la-box-56347-container, #s-la-content-faqlist-55621, #s-la-content-link-55624  {
 	max-width:930px;
 }
 
 /*POPULAR QUESTIONS BOX*/
-/*#s-la-box-55085-container {
+#s-la-box-55085-container {
 	padding:30px 0 0 0;
-}*/
+}
 .s-la-content-faqlist ul {
 	margin:0;
 }
@@ -506,7 +500,7 @@ ul#s-la-content-search-query-19074_list {
 
 
 /*GET MORE HELP BOX*/
-#s-la-box-58493-container /*GET PERSONALIZED HELP*/, #s-la-box-58495-container /*MORE HELP OPTIONS*/ {
+#s-la-box-56346-container /*GET PERSONALIZED HELP*/, #s-la-box-56348-container /*MORE HELP OPTIONS*/ {
 	padding:40px 0;
 	border-top:1px solid rgb(192,192,192);
 }
@@ -526,9 +520,9 @@ ul#s-la-content-search-query-19074_list {
 /*SHOWING # - # (OF #)*/
 .s-srch-range.pull-left {
 	color: #6c6c6c;
-    font-family: 'Trueno','Montserrat', sans-serif;
-		font-weight:200;
+    font-family: 'Trueno', 'Montserrat', sans-serif;
     font-size: 15px;
+	font-weight: 300;
     line-height: 25px;
 }
 
@@ -538,7 +532,7 @@ ul#s-la-content-search-query-19074_list {
 	font-size:12px;
 	line-height:1.5;
 	border-color:#adadad !important;
-	background:#f3f3f3 !important;
+	background:#e6e6e6 !important;
 	color:#1e1e1e !important;
 }
 
@@ -603,7 +597,7 @@ ul.dropdown-menu li a:hover {
 	color:#fff;
 }
 #s-la-askform-0 {
-	font-family:"Trueno",'Montserrat',sans-serif;
+	font-family:'Trueno', 'Montserrat', sans-serif;
 }
 
 
@@ -616,9 +610,10 @@ ul.dropdown-menu li a:hover {
 .s-la-widget .btn-chat, #lcs_slide_out-10272 header a {
     background-color: #0579b8;
     border-color: transparent !important;
-		font-family:"Trueno",'Montserrat',sans-serif !important;
-		letter-spacing:1.17px !important;
-		text-transform:uppercase;
+    /*color: #fff;*/
+    font-family: 'Trueno', 'Montserrat', sans-serif !important;
+    letter-spacing: 1.17px !important;
+    text-transform: uppercase;
     padding: 5px 9px;
     font-size:14px;
     transition:all 0.4s ease;
@@ -645,7 +640,7 @@ ul.dropdown-menu li a:hover {
 
 /*SUBMIT YOUR QUESTION WIDGET*/
 .modal-content {
-	font-family:'Trueno','Montserrat',sans-serif;
+	font-family:'Trueno', 'Montserrat', sans-serif;
 }
 #s-la-modal-close {
 	border:none !important;
@@ -666,7 +661,8 @@ ul.dropdown-menu li a:hover {
 .hl_footer {
 	background:#1E1E1E;
 	padding:40px 20px; /*change later*/
-	font-family:"TreunoLight",sans-serif;
+	font-family:'Trueno', 'Montserrat', sans-serif;
+	font-weight: 300;
 	/*text-transform:uppercase;*/
 }
 .hl_footer-ask {
@@ -743,9 +739,17 @@ ul.dropdown-menu li a:hover {
 	display:none;
 }
 
-/*hide "search faqs" title on single search and faq page*/
+/* "hides" title on single search and faq pages*/
 .s-la-page-public.s-la-page-single.search h1, .s-la-page-public.s-la-page-faq h1 {
-	display:none;
+	/*! display:none; */
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
 }
 
 /*"search results for:" header on search results page*/
@@ -827,7 +831,7 @@ li.s-la-faq-listing {
 	margin:0;
 }
 
-@media (max-width:745px) {
+@media (max-width:610px) {
 	section.hl_header-ask {
 		flex-wrap:wrap;
 	}
@@ -840,21 +844,7 @@ li.s-la-faq-listing {
 	button.s-la-searchform-button {
 		width:auto;
 	}
-/*	.ahtl_header-ask img {
-		height:70px;
-	}*/
 }
-/*@media (max-width:475px) {
-	.ahtl_header-ask img {
-		height:60px;
-		margin-left:-5px;
-	}
-}
-@media (max-width:375px) {
-	.ahtl_header-ask img {
-		height:50px;
-	}
-}*/
 
 
 
@@ -863,9 +853,6 @@ li.s-la-faq-listing {
 
 
 /*UNDER CONSTRUCTION*/
-.s-srch-params {
-	display:none;
-}
 .under-construction {
 	height:80px;
 	background:red;
@@ -876,7 +863,7 @@ li.s-la-faq-listing {
 	text-align:center;
 	color:#fff !important;
 	font-weight:400;
-	font-family:"Trueno",'Montserrat',sans-serif;
+	font-family:'Trueno','Montserrat',sans-serif;
 	line-height:22px !important;
 }
 .under-construction a {
@@ -899,11 +886,5 @@ li.s-la-faq-listing {
 		height:100px;
 	}
 }
-
-
-
-
-
-
 
 </style>
