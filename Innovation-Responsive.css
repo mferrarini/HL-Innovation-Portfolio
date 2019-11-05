@@ -74,6 +74,10 @@
   .search-block-form, #search-block-form {
     margin-left:0;
   }
+  #boxes-box-site_info {
+   margin-left:0;
+  }
+
 
 
 }
@@ -107,18 +111,18 @@
   #header-container .block-boxes-os_boxes_site_info {
     padding:3px 0 !important;
   }
-  #boxes-box-site_info h1 a {
+  /* #boxes-box-site_info h1 a {
     padding-left:10px;
-  }
+  } */
   .hl__header-logo{
     width:100%;
     text-align:left;
-    padding:11px 0;
+    padding:11px 20px;
     grid-row-start:2;
   }
-  .hl__header-logo .block-inner {
+  /* .hl__header-logo .block-inner {
     padding-left:25px;
-  }
+  } */
   .hl__hero h2{
     padding-top:59px;
     padding-bottom:129px;
@@ -130,13 +134,6 @@
 @media(max-width:768px){
   .block {
     width:auto !important;
-  }
-  .region-header-second div {
-    width:auto;
-  }
-
-  .region-header-second div {
-    width:auto;
   }
 
   .hl__story__main-content, .hl__story-index__cards .block-inner,
@@ -161,6 +158,10 @@
 @media(max-width:620px){
   .hl__footer__links {
     display:block;
+    flex-basis:auto;
+  }
+  .hl__footer__column {
+    width:100%;
   }
   .hl__footer__column.hl__footer__location-login {
     margin-left:0;
@@ -168,10 +169,6 @@
 }
 
 @media(max-width:606px){
-  /* is this actually happening at 479px? */
-  #content-column .hl__content-block--dots .block-inner {
-    padding:60px 0px;
-  }
   .hl__cta {
     padding:60px 0;
   }
@@ -211,6 +208,19 @@
   .hl__featured-stories .region-three-33-second > .region-inner {
     flex-direction: column-reverse;
   }
+
+  .hl__featured-story__image {
+    height:auto;
+  }
+  body.html .hl__featured-story__image img,
+  .hl__featured-story__image .media-element.file-default.file-os-files-xxlarge {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .hl__featured-story--1.hl__featured-story__content, .hl__featured-story--3.hl__featured-story__content {
+    margin-top: -7px;
+  }
 }
 
 @media(max-width:479px){
@@ -220,7 +230,53 @@
   #boxes-box-site_info h1 a {
     font-size:24px !important;
   }
+  #boxes-box-site_info h1 a, .hl__header-logo .block-inner {
+    padding-left:10px;
+  }
 
+  .hl__header-logo{
+    padding:11px 10px;
+    margin-left:-10px;
+  }
+
+  #header-panels .hl__hero .block-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hl__hero h2 {
+    font-size:36px;
+    line-height:1.2em;
+    padding-top:39px;
+    padding-bottom:79px;
+  }
+  .hl__hero__space {
+    margin-right:250px;
+  }
+  .hl__hero__options span {
+    width:250px;
+  }
+
+  #main-content-header {
+    padding-top: 40px;
+  }
+
+  .hl__story__main-content {
+  	padding-top: 0;
+  	margin-top: 0;
+  }
+  .hl__story__summary h2 {
+    font-size:32px;
+    line-height:40px;
+  }
+  .hl__quick-facts span {
+    font-size: 80px !important;
+    line-height: 100px !important;
+  }
 }
+
+
+/* @media(max-width:360px){
+
+} */
 
 </style>
